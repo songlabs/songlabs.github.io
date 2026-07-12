@@ -14,7 +14,7 @@
       color: #1f2933;
       background: #ffffff;
     }
-    h1, h2 {
+    h1, h2, h3 {
       line-height: 1.3;
     }
     h1 {
@@ -24,6 +24,10 @@
     h2 {
       margin-top: 2rem;
       font-size: 1.25rem;
+    }
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.05rem;
     }
     a {
       color: #2563eb;
@@ -48,7 +52,7 @@
 </head>
 <body>
   <h1>TimeNest Support</h1>
-  <p class="updated">Last updated: June 20, 2026</p>
+  <p class="updated">Last updated: July 12, 2026</p>
 
   <p>
     Thank you for using TimeNest. This page provides support information for the TimeNest
@@ -63,26 +67,98 @@
     </p>
     <p>
       When reporting a problem, please include your device model, iOS version, app version,
-      the language setting you are using, and a short description of the issue.
+      language setting, and a short description of the issue. Screenshots and reproduction
+      steps are helpful when available.
     </p>
   </div>
+
+  <h2>Supported Languages</h2>
+  <ul>
+    <li>日本語</li>
+    <li>简体中文</li>
+    <li>繁體中文</li>
+    <li>English</li>
+    <li>한국어</li>
+  </ul>
+  <p>
+    TimeNest can also follow the device's system-language setting.
+  </p>
 
   <h2>Frequently Asked Questions</h2>
 
   <h3>Where is my calendar data stored?</h3>
   <p>
-    TimeNest is designed as a local-first app. User-created calendar events, shift records,
-    work records, and settings are stored on your device by default.
+    TimeNest is designed as a local-first app. Calendar events, memos, shifts, work records,
+    reminders, and settings are stored locally on your device by default.
   </p>
 
   <h3>Does TimeNest require an account?</h3>
   <p>
-    No. The current version of TimeNest does not require account registration or sign-in.
+    No. TimeNest does not require a TimeNest account or developer-operated account sign-in.
   </p>
 
-  <h3>Does TimeNest provide cloud sync?</h3>
+  <h3>Does TimeNest provide cloud synchronization?</h3>
   <p>
-    No. The current version does not provide developer-operated cloud synchronization.
+    TimeNest does not provide developer-operated general-purpose cloud synchronization.
+    However, you can optionally share selected calendar content through Apple iCloud and
+    CloudKit.
+  </p>
+
+  <h3>How do shared calendars work?</h3>
+  <p>
+    The calendar owner can create a shared calendar and separately choose whether to share:
+  </p>
+  <ul>
+    <li>Calendar events</li>
+    <li>Shift records</li>
+    <li>Work-time records</li>
+  </ul>
+  <p>
+    The recipient can view the selected content, but cannot create, edit, or delete the
+    owner's shared content.
+  </p>
+
+  <h3>What information is not shared?</h3>
+  <p>
+    Shared-calendar records do not include private memos, notifications, voice-input
+    content, hourly rates, pay amounts, transportation fees, shift templates, advertising
+    state, purchase state, device settings, app settings, Widget-private data, or internal
+    holiday-subscription information.
+  </p>
+
+  <h3>What is required to use shared calendars?</h3>
+  <p>
+    Both devices must be signed in to Apple iCloud and have a working network connection.
+    The recipient must accept the CloudKit sharing invitation.
+  </p>
+
+  <h3>Why is a shared calendar or invitation unavailable?</h3>
+  <p>
+    Please check the following:
+  </p>
+  <ol>
+    <li>Confirm that the device is signed in to iCloud.</li>
+    <li>Confirm that the network connection is working.</li>
+    <li>Confirm that the recipient accepted the sharing invitation.</li>
+    <li>Ask the owner to confirm that sharing is still active.</li>
+    <li>
+      Ask the owner to confirm that the intended event, shift, or work-record sharing
+      switches are enabled.
+    </li>
+    <li>
+      Wait briefly and try again if Apple iCloud or CloudKit is temporarily unavailable.
+    </li>
+  </ol>
+
+  <h3>How can I stop or leave a shared calendar?</h3>
+  <p>
+    The owner can stop sharing from the Shared Calendar management screen. This revokes
+    recipient access without deleting the owner's local data.
+  </p>
+  <p>
+    A recipient can leave a shared calendar from the same area. TimeNest removes the shared
+    calendar's local entry and cache from the recipient's device without deleting the
+    owner's data.
   </p>
 
   <h3>How do public-holiday subscriptions work?</h3>
@@ -93,27 +169,47 @@
 
   <h3>Why is my widget not updating immediately?</h3>
   <p>
-    iOS controls when widgets refresh. If the widget does not update immediately, try opening
-    TimeNest, checking that the relevant data is visible in the app, and waiting for iOS to
-    refresh the widget.
+    iOS controls when widgets refresh. If the Widget does not update immediately, open
+    TimeNest, confirm that the relevant data is visible in the app, and wait for iOS to
+    refresh the Widget.
+  </p>
+
+  <h3>How can I remove advertisements?</h3>
+  <p>
+    TimeNest provides a one-time Remove Ads purchase through Apple In-App Purchase.
+    The purchase option is available from Settings.
+  </p>
+
+  <h3>How can I restore a previous Remove Ads purchase?</h3>
+  <p>
+    Open the Remove Ads screen in Settings and select Restore Purchases. Make sure that
+    the device is using the Apple ID that originally completed the purchase.
+  </p>
+
+  <h3>What happens if I deny tracking permission?</h3>
+  <p>
+    TimeNest's calendar functions remain available if App Tracking Transparency permission
+    is denied or restricted. Advertising behavior may vary according to your consent
+    choices, region, and applicable rules.
   </p>
 
   <h3>How can I change the app language?</h3>
   <p>
-    TimeNest supports Japanese, Simplified Chinese, English, Korean, and a system-language
-    mode. You can change the language from the app's settings.
+    You can change the language from TimeNest Settings. The app supports Japanese,
+    Simplified Chinese, Traditional Chinese, English, Korean, and a system-language mode.
   </p>
 
   <h3>How can I report a bug?</h3>
   <p>
-    Please email the support address above with a description of the issue, reproduction steps
-    if possible, and screenshots if they help explain the problem.
+    Please email the support address above with a description of the issue, reproduction
+    steps if possible, and screenshots if they help explain the problem.
   </p>
 
   <h2>Privacy Policy</h2>
   <p>
-    Please see the <a href="/timenest/privacy.html">TimeNest Privacy Policy</a> for information
-    about data handling and privacy.
+    Please see the <a href="/timenest/privacy.html">TimeNest Privacy Policy</a> for
+    information about local storage, shared calendars, advertising, purchases, and data
+    handling.
   </p>
 
   <footer>
