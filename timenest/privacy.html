@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,92 +41,185 @@
 </head>
 <body>
   <h1>TimeNest Privacy Policy</h1>
-  <p class="updated">Last updated: June 20, 2026</p>
+  <p class="updated">Last updated: July 12, 2026</p>
 
   <p>
     This Privacy Policy explains how TimeNest handles information when you use the app.
-    TimeNest is designed as a local-first calendar app. Calendar data created by the user
-    is stored on the device by default.
+    TimeNest is designed as a local-first calendar and schedule management app, and aims
+    to minimize the collection and transmission of user data.
   </p>
 
   <h2>Information You Create in the App</h2>
   <p>
-    TimeNest allows you to create and manage calendar events, all-day events, shift records,
-    work-time records, settings, and public-holiday subscription settings.
+    TimeNest allows you to create and manage calendar events, all-day events, memos,
+    shifts, work-time records, reminders, display settings, language settings, and
+    public-holiday subscription settings.
   </p>
   <p>
-    This user-created calendar data is stored locally on your device. TimeNest does not
-    currently provide account sign-in, cloud synchronization, or a developer-operated server
-    for uploading your calendar data.
+    This information is stored locally in the app sandbox or App Group container on your
+    device by default. TimeNest does not currently provide a TimeNest account system,
+    developer-operated backend, or general-purpose cloud synchronization service.
+  </p>
+
+  <h2>Shared Calendars and Apple iCloud</h2>
+  <p>
+    When you actively enable a shared calendar, TimeNest uses Apple iCloud and CloudKit
+    to transfer and store the content selected for sharing.
+  </p>
+  <p>
+    The calendar owner can separately choose whether to share:
+  </p>
+  <ul>
+    <li>Calendar events</li>
+    <li>Shift records</li>
+    <li>Work-time records</li>
+  </ul>
+  <p>
+    Recipients have read-only access. They can view shared content, but cannot create,
+    edit, or delete the owner's shared content.
+  </p>
+  <p>
+    Shared records do not include private memos, notifications, voice-input content,
+    hourly rates, pay amounts, transportation fees, shift templates, advertising state,
+    purchase state, device settings, app settings, Widget-private data, or internal
+    holiday-subscription information.
+  </p>
+  <p>
+    Shared-calendar availability, invitation processing, storage, and access are handled
+    through Apple iCloud and CloudKit and are also subject to Apple's applicable terms and
+    privacy policies.
   </p>
 
   <h2>Local Storage</h2>
   <p>
-    TimeNest stores app data such as events, shift records, work records, display settings,
-    language settings, holiday subscription choices, and cached holiday data in the app's
-    local container on your device.
+    TimeNest stores app data such as events, shifts, work records, reminders, display
+    preferences, language settings, holiday subscription choices, and cached holiday
+    information in local app storage.
   </p>
   <p>
     If you uninstall the app, iOS normally removes the app's local container and the data
-    stored inside it.
+    stored inside it. Data stored through Apple iCloud or CloudKit may be handled separately
+    under Apple's service rules.
   </p>
 
   <h2>Widgets and App Group Data</h2>
   <p>
-    If TimeNest widgets are enabled, the app may share a limited local snapshot of calendar
-    information with its widget extension through Apple's App Group mechanism. This is used
-    to display calendar information on your device and is not a cloud synchronization feature.
+    If TimeNest widgets are enabled, the app may share a limited local calendar snapshot
+    with its Widget Extension through Apple's App Group mechanism.
+  </p>
+  <p>
+    This exchange occurs locally on the device and is used only to display relevant
+    calendar information in the Widget. It is not a TimeNest-operated cloud synchronization
+    service.
   </p>
 
   <h2>Public-Holiday Subscriptions</h2>
   <p>
-    TimeNest can download public-holiday data from the holiday source selected in the app's
-    settings. When you test, refresh, or enable a holiday subscription, the app may send HTTPS
-    requests to the selected public ICS provider in order to download holiday calendar data.
+    TimeNest can download public-holiday data from the holiday source selected in the
+    app's settings. When you test, refresh, or enable a holiday subscription, the app may
+    send HTTPS requests to the selected public ICS provider to download holiday calendar
+    data.
   </p>
   <p>
-    The downloaded holiday data is cached locally on your device for calendar display.
+    The selected third-party provider may process information such as IP addresses,
+    access logs, or request details according to its own privacy policy. Downloaded holiday
+    data is cached locally on your device for calendar display.
   </p>
 
-  <h2>Advertising</h2>
+  <h2>Advertising, Consent, and Tracking</h2>
   <p>
-    TimeNest may use Google Mobile Ads to display banner advertisements. When advertising is
-    enabled, the Google Mobile Ads SDK may process information such as device information,
-    advertising-related identifiers, ad interactions, diagnostics, performance data, and other
-    information as described by Google and required for ad delivery, measurement, fraud
-    prevention, and related advertising operations.
+    TimeNest uses Google Mobile Ads to display banner advertisements to users who have not
+    purchased the Remove Ads feature.
   </p>
   <p>
-    The exact App Store privacy disclosures and tracking configuration depend on the final
-    production advertising setup. TimeNest does not sell user-created calendar data.
+    The Google Mobile Ads SDK may process information such as IP addresses, device
+    identifiers, advertising data, ad interactions, diagnostics, crash information,
+    performance data, and other information required for advertising delivery,
+    measurement, security, and fraud prevention.
+  </p>
+  <p>
+    TimeNest uses Google User Messaging Platform to manage advertising consent where
+    required. The app may also request authorization through Apple's App Tracking
+    Transparency framework before using information for tracking purposes.
+  </p>
+  <p>
+    If tracking authorization is denied or restricted, the app's calendar functionality
+    remains available. Depending on the user's choices, location, and applicable rules,
+    Google may provide non-personalized ads, limited ads, or no ads.
+  </p>
+  <p>
+    TimeNest does not sell user-created calendar data.
+  </p>
+
+  <h2>In-App Purchases</h2>
+  <p>
+    TimeNest provides a one-time Remove Ads purchase through Apple In-App Purchase and
+    StoreKit.
+  </p>
+  <p>
+    Purchase processing and payment information are handled by Apple. TimeNest does not
+    collect or store payment card details. Purchase restoration uses transaction and
+    entitlement information provided by Apple StoreKit.
+  </p>
+  <p>
+    Users with an active Remove Ads entitlement do not see banner advertisements.
   </p>
 
   <h2>Third-Party Services</h2>
   <p>
-    TimeNest may interact with the following third-party services depending on the features
-    you use:
+    TimeNest may interact with the following third-party services depending on the
+    features you use:
   </p>
   <ul>
-    <li>Public ICS holiday providers selected in the app's holiday subscription settings</li>
-    <li>Google Mobile Ads, if advertising is enabled</li>
+    <li>Apple iCloud and CloudKit for optional shared calendars</li>
+    <li>Apple StoreKit for the Remove Ads in-app purchase</li>
+    <li>Google Mobile Ads and Google User Messaging Platform for advertising and consent</li>
+    <li>Public ICS holiday providers selected in the app's settings</li>
   </ul>
+  <p>
+    These services may process data under their own terms and privacy policies.
+  </p>
+
+  <h2>Data Deletion and Shared-Calendar Access</h2>
+  <p>
+    You can delete events, shifts, work records, and other content that you created in
+    TimeNest from within the app.
+  </p>
+  <p>
+    When a shared-calendar owner deletes shared content, it is removed from the owner's
+    local data and from recipients' shared views during a later synchronization.
+  </p>
+  <p>
+    The owner can stop sharing from the Shared Calendar management screen. This revokes
+    recipient access without deleting the owner's remaining local data.
+  </p>
+  <p>
+    A recipient can leave a shared calendar. TimeNest then removes the shared calendar's
+    local entry and cache from the recipient's device without deleting the owner's data.
+  </p>
+  <p>
+    Holiday subscriptions can be disabled or modified in Settings. Uninstalling the app
+    normally removes locally stored app data from the device.
+  </p>
 
   <h2>Children's Privacy</h2>
   <p>
-    TimeNest is not designed to knowingly collect personal information from children. The app
-    does not currently provide account registration or developer-operated cloud storage.
+    TimeNest is not designed to knowingly collect personal information from children.
+    The app does not currently provide account registration or developer-operated cloud
+    storage.
   </p>
 
   <h2>Changes to This Policy</h2>
   <p>
     This Privacy Policy may be updated when TimeNest changes its features, data handling,
-    advertising configuration, or legal requirements. The latest version will be posted on
-    this page.
+    third-party services, advertising configuration, or legal requirements. The latest
+    version will be posted on this page.
   </p>
 
   <h2>Contact</h2>
   <p>
-    If you have questions about this Privacy Policy, please contact:
+    If you have questions about this Privacy Policy or TimeNest's data handling, please
+    contact:
     <a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a>
   </p>
 
