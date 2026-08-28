@@ -1,1 +1,182 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and frequently asked questions for QuotaGlance.">
+  <title>QuotaGlance Support</title>
+  <style>
+    :root { color-scheme: light; --background: #ffffff; --surface: #f8fafc; --text: #1f2933; --muted: #5f6b7a; --border: #e2e8f0; --accent: #2563eb; --accent-dark: #1d4ed8; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.72; color: var(--text); background: var(--background); }
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    a:hover { color: var(--accent-dark); }
+    .page { width: min(100% - 40px, 860px); margin: 0 auto; padding: 28px 0 48px; }
+    .site-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .brand { color: var(--text); font-size: 1.05rem; font-weight: 700; text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    nav a { font-size: 0.95rem; font-weight: 600; text-decoration: none; }
+    main { padding-top: 40px; }
+    h1, h2, h3 { line-height: 1.3; }
+    h1 { margin: 0; font-size: clamp(2rem, 6vw, 3rem); letter-spacing: -0.03em; }
+    h2 { margin-top: 2.2rem; font-size: 1.35rem; }
+    h3 { margin-top: 0; font-size: 1.08rem; }
+    p, li { max-width: 78ch; }
+    .updated { margin: 8px 0 28px; color: var(--muted); font-size: 0.95rem; }
+    .contact, .faq { padding: 20px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+    .contact p:last-child, .faq p:last-child { margin-bottom: 0; }
+    .faq-list { display: grid; gap: 14px; margin-top: 18px; }
+    .faq ul, .faq ol { padding-left: 1.35rem; }
+    .faq li + li { margin-top: 6px; }
+    footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+    footer p { margin: 6px 0; }
+    @media (max-width: 640px) {
+      .page { width: min(100% - 28px, 860px); padding-top: 20px; }
+      .site-header { align-items: flex-start; flex-direction: column; gap: 12px; }
+      main { padding-top: 32px; }
+      h2 { margin-top: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="/QuotaGlance/">QuotaGlance</a>
+      <nav aria-label="QuotaGlance pages">
+        <a href="/QuotaGlance/privacy/">Privacy</a>
+        <a href="/QuotaGlance/terms/">Terms</a>
+        <a href="/QuotaGlance/support/" aria-current="page">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>QuotaGlance Support</h1>
+      <p class="updated">Last updated: August 28, 2026</p>
+      <p>
+        This page provides support information for the QuotaGlance iPhone, iPad,
+        Widget, Apple Watch, and complication experience.
+      </p>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          For support, feedback, or bug reports, email
+          <a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a>.
+        </p>
+        <p>
+          When reporting a problem, include your device model, iOS or watchOS version,
+          QuotaGlance version, app language, connected provider, and a short description
+          of what happened. Do not send OAuth tokens, account credentials, or other secrets.
+        </p>
+      </section>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <section class="faq">
+          <h3>How do I connect Codex or Claude?</h3>
+          <p>
+            Open QuotaGlance Settings, find Accounts, and add the Codex or Claude account
+            you want to use. QuotaGlance opens the provider's browser authorization flow and
+            returns to the app through a local loopback callback. Sign in only with an account
+            you control. Provider OAuth and usage interfaces are compatibility-sensitive, so a
+            provider change can temporarily prevent a connection or refresh.
+          </p>
+        </section>
+
+        <section class="faq">
+          <h3>How do I refresh quota data?</h3>
+          <p>
+            Pull down on the dashboard to request a manual refresh for entitled accounts, or use
+            the refresh control on an account card. Trial and Pro can choose an automatic interval;
+            Free uses a fixed four-hour automatic interval. iOS controls background execution, so
+            the selected interval is not a promise that a refresh will occur at an exact time.
+          </p>
+          <p>
+            If a refresh fails, QuotaGlance keeps the latest successful snapshot and displays an
+            error state. Reconnect the account if the session has expired.
+          </p>
+        </section>
+
+        <section class="faq">
+          <h3>How does the Widget work?</h3>
+          <p>
+            QuotaGlance provides small and medium Widget families for iPhone and iPad. An active
+            Trial or Lifetime Pro is required to display quota data in the Widget; Free displays an
+            upgrade prompt. Choose the Widget account and the Widget/Watch quota window in Settings.
+          </p>
+          <p>
+            Widget updates are scheduled by iOS and may not appear immediately. Open QuotaGlance,
+            confirm that current data is visible, and allow iOS time to refresh the Widget timeline.
+          </p>
+        </section>
+
+        <section class="faq">
+          <h3>What is available on Apple Watch?</h3>
+          <p>
+            Free shows the first saved account and its 5-hour quota on Apple Watch. Trial and Pro
+            can choose up to two display accounts and can include Weekly quota data. The Watch app
+            and circular, rectangular, and inline complications use snapshots supplied by the iPhone;
+            they do not store or receive provider OAuth credentials.
+          </p>
+          <p>
+            The Watch Refresh Data action asks the paired iPhone to refresh. Availability and timing
+            depend on WatchConnectivity, the paired devices, network access, and the provider.
+          </p>
+        </section>
+
+        <section class="faq">
+          <h3>What is the difference between Free, Trial, and Pro?</h3>
+          <ul>
+            <li><strong>Free:</strong> one account, 5-hour data on iPhone/iPad and Apple Watch, a fixed four-hour automatic interval, and no quota-data Widget.</li>
+            <li><strong>Trial:</strong> seven days of the same features as Pro. It is a free Non-Consumable purchase and does not renew, charge automatically, or buy Lifetime Pro.</li>
+            <li><strong>Lifetime Pro:</strong> a one-time Non-Consumable purchase that unlocks Weekly data, multiple accounts, the Widget, advanced Watch display choices, and selectable automatic intervals.</li>
+          </ul>
+          <p>Free access remains available after the Trial expires.</p>
+        </section>
+
+        <section class="faq">
+          <h3>How do I restore purchases?</h3>
+          <p>
+            Open Settings, select the Pro or membership row, and choose Restore Purchases. Use the
+            Apple ID that originally obtained the Trial or purchased Lifetime Pro. QuotaGlance calls
+            Apple's <code>AppStore.sync()</code> and then rebuilds access from verified current
+            StoreKit entitlements. A completed restore does not itself guarantee that a Lifetime Pro
+            entitlement exists for the current Apple ID.
+          </p>
+        </section>
+
+        <section class="faq">
+          <h3>Where are credentials and quota data stored?</h3>
+          <p>
+            OAuth credentials are stored in the iPhone or iPad Keychain and are used directly with
+            the selected provider. Widgets and Watch surfaces receive non-credential snapshots only.
+            QuotaGlance has no developer-operated backend, analytics, tracking, or advertising SDK.
+            Read the Privacy Policy for the complete current data-handling description.
+          </p>
+        </section>
+      </div>
+
+      <h2>Policies</h2>
+      <ul>
+        <li><a href="/QuotaGlance/privacy/">QuotaGlance Privacy Policy</a></li>
+        <li><a href="/QuotaGlance/terms/">QuotaGlance Terms of Use</a></li>
+      </ul>
+
+      <h2>Independent product notice</h2>
+      <p>
+        QuotaGlance is independent and is not affiliated with, endorsed by, or sponsored by
+        OpenAI or Anthropic. Provider services, account eligibility, and provider-side availability
+        are managed by the corresponding provider.
+      </p>
+    </main>
+
+    <footer>
+      <p><a href="/QuotaGlance/">Back to QuotaGlance</a></p>
+      <p><a href="/QuotaGlance/privacy/">Privacy Policy</a> · <a href="/QuotaGlance/terms/">Terms of Use</a></p>
+      <p>&copy; 2026 SongLabs. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

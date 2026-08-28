@@ -1,1 +1,192 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QuotaGlance is a local-first iPhone, iPad, Widget, and Apple Watch app for viewing Codex and Claude usage quotas.">
+  <title>QuotaGlance</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #ffffff;
+      --surface: #f8fafc;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--background);
+    }
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    a:hover { color: var(--accent-dark); }
+    .page {
+      width: min(100% - 40px, 820px);
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand {
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    nav a { font-size: 0.95rem; font-weight: 600; text-decoration: none; }
+    main { padding-top: 42px; }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1, h2 { line-height: 1.25; }
+    h1 { margin: 0; font-size: clamp(2.2rem, 8vw, 3.7rem); letter-spacing: -0.04em; }
+    h2 { margin: 0 0 10px; font-size: 1.3rem; }
+    .lead { max-width: 680px; margin: 18px 0 0; color: var(--muted); font-size: 1.12rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .button.primary { color: #ffffff; background: var(--accent); }
+    .button.primary:hover { color: #ffffff; background: var(--accent-dark); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 40px;
+    }
+    .card {
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+    .card p { margin: 0; color: var(--muted); }
+    .notice { margin-top: 16px; }
+    .links { margin-top: 36px; }
+    .links ul { margin: 12px 0 0; padding-left: 1.25rem; }
+    .links li + li { margin-top: 7px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer p { margin: 6px 0; }
+    @media (max-width: 640px) {
+      .page { width: min(100% - 28px, 820px); padding-top: 20px; }
+      .site-header { align-items: flex-start; flex-direction: column; gap: 12px; }
+      main { padding-top: 32px; }
+      .grid { grid-template-columns: 1fr; margin-top: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="/QuotaGlance/" aria-current="page">QuotaGlance</a>
+      <nav aria-label="QuotaGlance pages">
+        <a href="/QuotaGlance/privacy/">Privacy</a>
+        <a href="/QuotaGlance/terms/">Terms</a>
+        <a href="/QuotaGlance/support/">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <p class="eyebrow">Usage quotas at a glance</p>
+      <h1>QuotaGlance</h1>
+      <p class="lead">
+        A local-first app for viewing the remaining 5-hour and Weekly usage windows
+        returned by connected Codex and Claude services on iPhone, iPad, widgets,
+        and Apple Watch.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="/QuotaGlance/support/">Get Support</a>
+        <a class="button" href="/QuotaGlance/privacy/">Read the Privacy Policy</a>
+      </div>
+
+      <section class="grid" aria-label="QuotaGlance overview">
+        <article class="card">
+          <h2>Codex and Claude</h2>
+          <p>
+            Connect your own supported provider account and view the quota windows
+            supplied by that provider. Provider availability and compatibility may change.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Local-first</h2>
+          <p>
+            OAuth credentials remain in the iPhone or iPad Keychain. QuotaGlance has no
+            developer-operated backend, analytics, tracking, advertising SDK, or remote
+            usage-history database.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Widgets and Apple Watch</h2>
+          <p>
+            Widgets, the Apple Watch app, and complications use non-credential snapshots.
+            They do not receive OAuth tokens or make provider OAuth and usage requests.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Free, Trial, and Pro</h2>
+          <p>
+            Free access remains available. The optional seven-day Trial does not renew or
+            charge automatically. Lifetime Pro is a separate one-time purchase handled by Apple.
+          </p>
+        </article>
+      </section>
+
+      <section class="card notice" aria-labelledby="independent-heading">
+        <h2 id="independent-heading">Independent third-party application</h2>
+        <p>
+          QuotaGlance is independent and is not affiliated with, endorsed by, or sponsored
+          by OpenAI or Anthropic. The provider names are used only to identify services a
+          user may choose to connect.
+        </p>
+      </section>
+
+      <section class="links" aria-labelledby="links-heading">
+        <h2 id="links-heading">Information and support</h2>
+        <ul>
+          <li><a href="/QuotaGlance/privacy/">Privacy Policy</a></li>
+          <li><a href="/QuotaGlance/terms/">Terms of Use</a></li>
+          <li><a href="/QuotaGlance/support/">QuotaGlance Support</a></li>
+          <li>Email: <a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 SongLabs. All rights reserved.</p>
+      <p>QuotaGlance is an independent third-party application.</p>
+    </footer>
+  </div>
+</body>
+</html>
