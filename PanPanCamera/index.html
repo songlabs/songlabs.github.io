@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PanPan Privacy Policy</title>
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -14,7 +15,7 @@
       color: #222;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       line-height: 1.3;
     }
 
@@ -35,11 +36,21 @@
       border: 0;
       border-top: 1px solid #ddd;
     }
+
+    .effective-date {
+      color: #666;
+      margin-bottom: 24px;
+    }
   </style>
 </head>
+
 <body>
 
 <h1>PanPan Privacy Policy</h1>
+
+<p class="effective-date">
+  Effective date: September 23, 2026
+</p>
 
 <nav>
   <a href="#ja">日本語</a>
@@ -49,239 +60,760 @@
   <a href="#zh-hant">繁體中文</a>
 </nav>
 
+
+<!-- Japanese -->
+
 <section id="ja">
   <h2>日本語</h2>
 
-  <p>PanPan は、写真撮影および写真編集を行う iPhone アプリです。</p>
+  <p>
+    PanPan は、写真撮影および写真編集を行う iPhone アプリです。
+    写真処理および顔データの解析はユーザーの端末上で実行されます。
+  </p>
 
   <h3>データの処理</h3>
+
   <p>
-    写真処理、美肌、美顔、メイク、フィルター、人の顔のランドマーク解析は、
-    ユーザーの端末上で実行されます。
+    写真処理、美肌、美顔、メイク、顔型補正、フィルター、
+    顔検出および顔ランドマーク解析はユーザーの端末上で実行されます。
+  </p>
+
+  <p>
+    PanPan は、開発者のために個人データを収集しません。
+    開発者が運営するサーバー、広告 SDK、Analytics SDK、
+    またはアプリやウェブサイトを横断するユーザートラッキングを使用しません。
+  </p>
+
+  <h3>顔データ</h3>
+
+  <p>
+    PanPan は Apple の Vision フレームワークを使用して、
+    ユーザーの端末上で顔データを一時的に解析します。
+  </p>
+
+  <p>
+    処理される顔データには、顔のバウンディングボックス、顔の輪郭、
+    目、瞳孔、眉、鼻、唇、口などの顔ランドマーク座標が含まれる場合があります。
+  </p>
+
+  <p>
+    これらの顔データは、カメラプレビュー、美肌、美顔、メイク、
+    顔型補正および写真編集機能を提供する目的だけに使用されます。
+  </p>
+
+  <p>
+    顔データはユーザーの端末上でのみ処理されます。
+    開発者に送信されることはありません。
+  </p>
+
+  <p>
+    PanPan は顔データを開発者が運営するサーバーや外部サービスへアップロードせず、
+    第三者へ販売、開示、共有することもありません。
+  </p>
+
+  <p>
+    顔データはカメラプレビューまたは写真処理中に端末のメモリ上で
+    一時的に処理されます。
+    PanPan は顔ランドマークやその他の顔データについて、
+    永続的なデータベースや個別の保存記録を作成しません。
+  </p>
+
+  <p>
+    関連する処理が完了した後、顔データは PanPan によって永続的に保持されません。
+    開発者が運営するサーバーには顔データを保存しないため、
+    開発者側サーバーにおける顔データの保存期間は 0 です。
+  </p>
+
+  <p>
+    PanPan は開発者側で顔データを保持しないため、
+    開発者が保有する顔データについて個別の削除申請を行う必要はありません。
+  </p>
+
+  <p>
+    PanPan は顔データを個人の特定、本人確認、認証、広告、マーケティング、
+    ユーザープロファイリング、Analytics、
+    またはアプリやウェブサイトを横断するトラッキングには使用しません。
   </p>
 
   <h3>写真データ</h3>
+
   <p>
-    PanPan は写真や顔のランドマーク情報を開発者のサーバーへアップロードしません。
-    PanPan はユーザーの写真を開発者のサーバーに保存しません。
+    PanPan は写真を開発者が運営するサーバーへアップロードせず、
+    開発者のサーバーに保存しません。
+  </p>
+
+  <p>
+    ユーザーが保存を選択した写真には、画像の一部として人物の顔が含まれる場合があります。
+    これらの写真はユーザー自身の Apple Photos ライブラリに保存され、
+    ユーザー自身が管理します。
+  </p>
+
+  <p>
+    PanPan は顔ランドマーク情報を写真とは別のデータとして保存しません。
   </p>
 
   <h3>カメラ</h3>
+
   <p>
     カメラへのアクセスは、ライブプレビューおよび写真撮影のために使用します。
   </p>
 
   <h3>写真ライブラリ</h3>
+
   <p>
-    写真ライブラリへの追加権限は、撮影または編集した写真を保存するために使用します。
-    既存の写真を選択する場合は、Apple のシステム Photos Picker を使用します。
+    写真ライブラリへの追加権限は、
+    撮影または編集した写真をユーザーが保存するときだけ使用します。
+  </p>
+
+  <p>
+    既存の写真を選択する場合は Apple のシステム Photos Picker を使用します。
+    PanPan がアクセスできるのはユーザーが選択した項目だけです。
+  </p>
+
+  <p>
+    Photos Picker や iCloud Photos などの Apple システムサービスは、
+    Apple の利用条件およびプライバシーポリシーに基づいて
+    Apple と通信する場合があります。
   </p>
 
   <h3>アカウント・広告・解析</h3>
+
   <p>
     PanPan はユーザーアカウントを必要としません。
     広告 SDK、Analytics SDK、ユーザートラッキングを使用しません。
   </p>
 
   <h3>データの保持と削除</h3>
+
   <p>
-    PanPan は写真を開発者のサーバーに保存しません。
-    写真アプリに保存された写真は、ユーザー自身が Apple Photos から管理・削除できます。
+    PanPan は写真または顔データを開発者のサーバーに保存しません。
+  </p>
+
+  <p>
+    Apple Photos に保存された写真は、
+    ユーザー自身が写真 App から管理・削除できます。
   </p>
 
   <h3>権限の変更</h3>
+
   <p>
-    カメラおよび写真へのアクセス権限は、iOS の「設定」からいつでも変更できます。
+    カメラおよび写真へのアクセス権限は、
+    iOS の「設定」からいつでも変更できます。
+  </p>
+
+  <h3>プライバシーポリシーの変更</h3>
+
+  <p>
+    PanPan の機能またはデータの取り扱いが変更された場合、
+    本プライバシーポリシーを更新することがあります。
   </p>
 </section>
 
+
 <hr>
+
+
+<!-- English -->
 
 <section id="en">
   <h2>English</h2>
 
-  <p>PanPan is an iPhone app for taking and editing photos.</p>
+  <p>
+    PanPan is an iPhone app for taking and editing photos.
+    Photo processing and face-data analysis are performed on the user's device.
+  </p>
 
   <h3>Data Processing</h3>
+
   <p>
-    Photo processing, skin enhancement, face adjustment, makeup, filters,
-    and facial landmark analysis are performed on the user's device.
+    Photo processing, skin enhancement, face adjustment, makeup,
+    face-shape effects, filters, face detection, and facial landmark analysis
+    are performed on the user's device.
+  </p>
+
+  <p>
+    PanPan does not collect personal data for the developer.
+    It does not use a developer-operated server, advertising SDK,
+    analytics SDK, or cross-app or cross-website tracking.
+  </p>
+
+  <h3>Face Data</h3>
+
+  <p>
+    PanPan uses Apple's Vision framework to temporarily analyze
+    face data on the user's device.
+  </p>
+
+  <p>
+    The face data processed by PanPan may include face bounding boxes,
+    face contours, and facial landmark coordinates for the eyes, pupils,
+    eyebrows, nose, lips, mouth, and other facial features.
+  </p>
+
+  <p>
+    This face data is used only to provide PanPan's camera preview,
+    skin enhancement, beauty effects, makeup, face-shape effects,
+    and photo-editing functionality.
+  </p>
+
+  <p>
+    Face data is processed only on the user's device.
+    It is not transmitted to the developer.
+  </p>
+
+  <p>
+    PanPan does not upload face data to developer-operated servers
+    or external services.
+    PanPan does not sell, disclose, or share face data with third parties.
+  </p>
+
+  <p>
+    Face data is temporarily processed in device memory during
+    camera preview or photo processing.
+    PanPan does not create a persistent database or separate stored record
+    of facial landmarks or other face data.
+  </p>
+
+  <p>
+    After the relevant processing operation is complete,
+    PanPan does not persistently retain face data.
+    No face data is stored on developer-operated servers.
+    Therefore, the developer's server-side retention period for face data is zero.
+  </p>
+
+  <p>
+    Because PanPan does not retain developer-held face data,
+    there is no developer-held face-data record that requires
+    a separate deletion request or deletion mechanism.
+  </p>
+
+  <p>
+    PanPan does not use face data for identification,
+    identity verification, authentication, advertising, marketing,
+    user profiling, analytics, or cross-app or cross-website tracking.
   </p>
 
   <h3>Photo Data</h3>
+
   <p>
-    PanPan does not upload photos or facial landmark data to the developer's servers.
-    PanPan does not store users' photos on developer-operated servers.
+    PanPan does not upload photos to developer-operated servers
+    and does not store users' photos on developer-operated servers.
+  </p>
+
+  <p>
+    Photos that the user explicitly chooses to save may contain
+    a person's face as part of the image itself.
+    These photos are stored in the user's Apple Photos library
+    and remain under the user's control.
+  </p>
+
+  <p>
+    PanPan does not separately save facial landmark data with those photos.
   </p>
 
   <h3>Camera</h3>
+
   <p>
     Camera access is used for live preview and photo capture.
   </p>
 
   <h3>Photo Library</h3>
+
   <p>
-    Add-only Photos permission is used to save captured or edited photos.
-    Apple’s system Photos Picker is used when the user selects an existing photo.
+    Add-only Photos permission is used only when the user chooses
+    to save a captured or edited photo.
+  </p>
+
+  <p>
+    Apple's system Photos Picker is used when the user selects
+    an existing photo for on-device editing.
+    PanPan receives access only to the item selected by the user.
+  </p>
+
+  <p>
+    Apple system services, including Photos Picker and iCloud Photos,
+    may communicate with Apple under Apple's own terms and privacy policies.
   </p>
 
   <h3>Accounts, Advertising, and Analytics</h3>
+
   <p>
     PanPan does not require a user account.
-    It does not use advertising SDKs, analytics SDKs, or cross-app tracking.
+    It does not use advertising SDKs, analytics SDKs,
+    or cross-app or cross-website tracking.
   </p>
 
   <h3>Data Retention and Deletion</h3>
+
   <p>
-    PanPan does not store photos on developer-operated servers.
-    Photos saved to Apple Photos can be managed and deleted by the user.
+    PanPan does not store photos or face data on developer-operated servers.
+  </p>
+
+  <p>
+    Photos saved to Apple Photos can be managed and deleted by the user
+    through the Photos app.
   </p>
 
   <h3>Permissions</h3>
+
   <p>
     Camera and Photos permissions can be changed at any time in iOS Settings.
   </p>
+
+  <h3>Changes to This Privacy Policy</h3>
+
+  <p>
+    This Privacy Policy may be updated if PanPan's features
+    or data practices change.
+  </p>
 </section>
 
+
 <hr>
+
+
+<!-- Korean -->
 
 <section id="ko">
   <h2>한국어</h2>
 
-  <p>PanPan은 사진 촬영 및 편집을 위한 iPhone 앱입니다.</p>
+  <p>
+    PanPan은 사진 촬영 및 편집을 위한 iPhone 앱입니다.
+    사진 처리 및 얼굴 데이터 분석은 사용자의 기기에서 수행됩니다.
+  </p>
 
   <h3>데이터 처리</h3>
+
   <p>
-    사진 처리, 피부 보정, 얼굴 보정, 메이크업, 필터 및 얼굴 랜드마크 분석은
-    사용자의 기기에서 처리됩니다.
+    사진 처리, 피부 보정, 얼굴 보정, 메이크업, 얼굴형 보정,
+    필터, 얼굴 감지 및 얼굴 랜드마크 분석은 사용자의 기기에서 수행됩니다.
+  </p>
+
+  <p>
+    PanPan은 개발자를 위해 개인 데이터를 수집하지 않습니다.
+    개발자 운영 서버, 광고 SDK, 분석 SDK 또는
+    앱이나 웹사이트 간 사용자 추적 기능을 사용하지 않습니다.
+  </p>
+
+  <h3>얼굴 데이터</h3>
+
+  <p>
+    PanPan은 Apple의 Vision 프레임워크를 사용하여
+    사용자의 기기에서 얼굴 데이터를 일시적으로 분석합니다.
+  </p>
+
+  <p>
+    처리되는 얼굴 데이터에는 얼굴 경계 영역, 얼굴 윤곽,
+    눈, 동공, 눈썹, 코, 입술, 입 및 기타 얼굴 특징의
+    랜드마크 좌표가 포함될 수 있습니다.
+  </p>
+
+  <p>
+    이 얼굴 데이터는 PanPan의 카메라 미리보기,
+    피부 보정, 뷰티 효과, 메이크업, 얼굴형 보정
+    및 사진 편집 기능을 제공하는 용도로만 사용됩니다.
+  </p>
+
+  <p>
+    얼굴 데이터는 사용자의 기기에서만 처리되며
+    개발자에게 전송되지 않습니다.
+  </p>
+
+  <p>
+    PanPan은 얼굴 데이터를 개발자 운영 서버나 외부 서비스에 업로드하지 않습니다.
+    얼굴 데이터를 판매하거나 공개하거나 제3자와 공유하지 않습니다.
+  </p>
+
+  <p>
+    얼굴 데이터는 카메라 미리보기 또는 사진 처리 과정에서
+    기기 메모리에 일시적으로 처리됩니다.
+    PanPan은 얼굴 랜드마크 또는 기타 얼굴 데이터의
+    영구 데이터베이스나 별도의 저장 기록을 생성하지 않습니다.
+  </p>
+
+  <p>
+    관련 처리가 완료된 후 PanPan은 얼굴 데이터를 지속적으로 보관하지 않습니다.
+    개발자 운영 서버에는 얼굴 데이터가 저장되지 않으므로
+    개발자 서버 측 얼굴 데이터 보관 기간은 0입니다.
+  </p>
+
+  <p>
+    PanPan은 개발자가 보유하는 얼굴 데이터를 유지하지 않으므로
+    별도의 얼굴 데이터 삭제 요청 또는 삭제 기능이 필요한
+    개발자 보유 기록이 없습니다.
+  </p>
+
+  <p>
+    PanPan은 얼굴 데이터를 개인 식별, 신원 확인, 인증,
+    광고, 마케팅, 사용자 프로파일링, 분석,
+    앱이나 웹사이트 간 추적에 사용하지 않습니다.
   </p>
 
   <h3>사진 데이터</h3>
+
   <p>
-    PanPan은 사진이나 얼굴 랜드마크 데이터를 개발자 서버로 업로드하지 않습니다.
-    또한 사용자의 사진을 개발자 서버에 저장하지 않습니다.
+    PanPan은 사진을 개발자 운영 서버에 업로드하거나 저장하지 않습니다.
+  </p>
+
+  <p>
+    사용자가 직접 저장하기로 선택한 사진에는
+    이미지의 일부로 사람의 얼굴이 포함될 수 있습니다.
+    이러한 사진은 사용자의 Apple Photos 보관함에 저장되며
+    사용자가 직접 관리합니다.
+  </p>
+
+  <p>
+    PanPan은 해당 사진과 별도로 얼굴 랜드마크 데이터를 저장하지 않습니다.
   </p>
 
   <h3>카메라</h3>
+
   <p>
     카메라 권한은 실시간 미리보기와 사진 촬영을 위해 사용됩니다.
   </p>
 
   <h3>사진 보관함</h3>
+
   <p>
-    사진 추가 권한은 촬영하거나 편집한 사진을 저장하기 위해 사용됩니다.
-    기존 사진을 선택할 때는 Apple 시스템 Photos Picker를 사용합니다.
+    사진 추가 권한은 사용자가 촬영하거나 편집한 사진을
+    저장하기로 선택했을 때만 사용됩니다.
+  </p>
+
+  <p>
+    기존 사진을 선택하여 기기에서 편집할 때는
+    Apple 시스템 Photos Picker를 사용합니다.
+    PanPan은 사용자가 선택한 항목에만 접근할 수 있습니다.
+  </p>
+
+  <p>
+    Photos Picker 및 iCloud Photos를 포함한 Apple 시스템 서비스는
+    Apple의 자체 약관 및 개인정보 보호정책에 따라
+    Apple과 통신할 수 있습니다.
   </p>
 
   <h3>계정, 광고 및 분석</h3>
+
   <p>
     PanPan은 사용자 계정을 요구하지 않습니다.
-    광고 SDK, 분석 SDK 또는 사용자 추적 기능을 사용하지 않습니다.
+    광고 SDK, 분석 SDK 또는 앱이나 웹사이트 간 추적 기능을 사용하지 않습니다.
   </p>
 
   <h3>데이터 보관 및 삭제</h3>
+
   <p>
-    PanPan은 개발자 서버에 사진을 저장하지 않습니다.
-    Apple Photos에 저장된 사진은 사용자가 직접 관리하고 삭제할 수 있습니다.
+    PanPan은 개발자 운영 서버에 사진 또는 얼굴 데이터를 저장하지 않습니다.
+  </p>
+
+  <p>
+    Apple Photos에 저장된 사진은
+    사용자가 사진 앱에서 직접 관리하고 삭제할 수 있습니다.
   </p>
 
   <h3>권한 변경</h3>
+
   <p>
     카메라 및 사진 권한은 iOS 설정에서 언제든지 변경할 수 있습니다.
   </p>
+
+  <h3>개인정보 보호정책 변경</h3>
+
+  <p>
+    PanPan의 기능 또는 데이터 처리 방식이 변경되는 경우
+    본 개인정보 보호정책이 업데이트될 수 있습니다.
+  </p>
 </section>
 
+
 <hr>
+
+
+<!-- Simplified Chinese -->
 
 <section id="zh-hans">
   <h2>简体中文</h2>
 
-  <p>PanPan 是一款用于拍摄和编辑照片的 iPhone 应用。</p>
+  <p>
+    PanPan 是一款用于拍摄和编辑照片的 iPhone App。
+    照片处理和人脸数据分析均在用户设备本地完成。
+  </p>
 
   <h3>数据处理</h3>
+
   <p>
-    照片处理、美肤、美型、美妆、滤镜以及人脸关键点分析均在用户设备本地完成。
+    照片处理、美肤、美型、美妆、脸型调整、滤镜、
+    人脸检测以及人脸关键点分析均在用户设备本地完成。
+  </p>
+
+  <p>
+    PanPan 不为开发者收集个人数据。
+    不使用开发者运营的服务器、广告 SDK、Analytics SDK，
+    也不进行跨 App 或网站的用户跟踪。
+  </p>
+
+  <h3>人脸数据</h3>
+
+  <p>
+    PanPan 使用 Apple Vision 框架，
+    在用户设备本地临时分析人脸数据。
+  </p>
+
+  <p>
+    PanPan 处理的人脸数据可能包括人脸边界区域、人脸轮廓、
+    眼睛、瞳孔、眉毛、鼻子、嘴唇、嘴部以及其他面部特征的关键点坐标。
+  </p>
+
+  <p>
+    这些人脸数据仅用于提供 PanPan 的实时相机预览、
+    美肤、美颜、美妆、脸型调整和照片编辑功能。
+  </p>
+
+  <p>
+    人脸数据仅在用户设备本地处理，不会发送给开发者。
+  </p>
+
+  <p>
+    PanPan 不会将人脸数据上传到开发者运营的服务器或外部服务，
+    不出售、不披露，也不与第三方共享人脸数据。
+  </p>
+
+  <p>
+    人脸数据仅在相机预览或照片处理过程中临时存在于设备内存中。
+    PanPan 不会建立用于永久保存人脸关键点或其他人脸数据的数据库或独立记录。
+  </p>
+
+  <p>
+    相关处理完成后，PanPan 不会持久保留人脸数据。
+    开发者运营的服务器不会存储任何人脸数据，
+    因此开发者服务器端的人脸数据保留时间为 0。
+  </p>
+
+  <p>
+    由于 PanPan 不持有任何由开发者保存的人脸数据，
+    因此不存在需要用户另外申请删除的开发者持有人脸数据记录。
+  </p>
+
+  <p>
+    PanPan 不会将人脸数据用于个人身份识别、身份验证、认证、
+    广告、营销、用户画像、数据分析或跨 App / 网站跟踪。
   </p>
 
   <h3>照片数据</h3>
+
   <p>
-    PanPan 不会将照片或人脸关键点数据上传到开发者服务器，
+    PanPan 不会将照片上传到开发者运营的服务器，
     也不会在开发者服务器上保存用户照片。
   </p>
 
+  <p>
+    用户主动选择保存的照片可能包含作为照片内容一部分的人脸。
+    这些照片保存在用户自己的 Apple Photos 图库中，并由用户自行管理。
+  </p>
+
+  <p>
+    PanPan 不会将人脸关键点数据作为独立数据随照片保存。
+  </p>
+
   <h3>相机</h3>
+
   <p>
     相机权限仅用于实时取景和拍照。
   </p>
 
   <h3>照片图库</h3>
+
   <p>
-    照片添加权限仅用于保存拍摄或编辑后的照片。
-    用户选择已有照片时，使用 Apple 系统 Photos Picker。
+    照片添加权限仅在用户主动选择保存拍摄或编辑后的照片时使用。
+  </p>
+
+  <p>
+    用户选择已有照片并进行本地编辑时，
+    使用 Apple 系统 Photos Picker。
+    PanPan 仅能访问用户选择的项目。
+  </p>
+
+  <p>
+    Photos Picker、iCloud Photos 等 Apple 系统服务
+    可能依据 Apple 自身的条款和隐私政策与 Apple 通信。
   </p>
 
   <h3>账号、广告与分析</h3>
+
   <p>
     PanPan 不需要用户账号，
-    不使用广告 SDK、Analytics SDK，也不进行跨 App 或网站追踪。
+    不使用广告 SDK、Analytics SDK，
+    也不进行跨 App 或网站跟踪。
   </p>
 
   <h3>数据保存与删除</h3>
+
   <p>
-    PanPan 不会在开发者服务器保存用户照片。
-    保存到 Apple Photos 的照片由用户自行管理和删除。
+    PanPan 不会在开发者运营的服务器上保存照片或人脸数据。
+  </p>
+
+  <p>
+    保存到 Apple Photos 的照片由用户自行管理，
+    可以通过“照片”App 删除。
   </p>
 
   <h3>权限管理</h3>
+
   <p>
     用户可以随时通过 iOS“设置”修改相机和照片权限。
   </p>
+
+  <h3>隐私政策更新</h3>
+
+  <p>
+    当 PanPan 的功能或数据处理方式发生变化时，
+    本隐私政策可能会更新。
+  </p>
 </section>
 
+
 <hr>
+
+
+<!-- Traditional Chinese -->
 
 <section id="zh-hant">
   <h2>繁體中文</h2>
 
-  <p>PanPan 是一款用於拍攝及編輯照片的 iPhone App。</p>
+  <p>
+    PanPan 是一款用於拍攝及編輯照片的 iPhone App。
+    照片處理和人臉資料分析均在使用者裝置本機完成。
+  </p>
 
   <h3>資料處理</h3>
+
   <p>
-    照片處理、美膚、美型、美妝、濾鏡以及人臉關鍵點分析均在使用者裝置本機完成。
+    照片處理、美膚、美型、美妝、臉型調整、濾鏡、
+    人臉偵測以及人臉關鍵點分析均在使用者裝置本機完成。
+  </p>
+
+  <p>
+    PanPan 不會為開發者收集個人資料。
+    不使用開發者營運的伺服器、廣告 SDK、Analytics SDK，
+    也不進行跨 App 或網站的使用者追蹤。
+  </p>
+
+  <h3>人臉資料</h3>
+
+  <p>
+    PanPan 使用 Apple Vision 框架，
+    在使用者裝置本機暫時分析人臉資料。
+  </p>
+
+  <p>
+    PanPan 處理的人臉資料可能包括人臉邊界區域、人臉輪廓、
+    眼睛、瞳孔、眉毛、鼻子、嘴唇、嘴部以及其他臉部特徵的關鍵點座標。
+  </p>
+
+  <p>
+    這些人臉資料僅用於提供 PanPan 的即時相機預覽、
+    美膚、美顏、美妝、臉型調整和照片編輯功能。
+  </p>
+
+  <p>
+    人臉資料僅在使用者裝置本機處理，不會傳送給開發者。
+  </p>
+
+  <p>
+    PanPan 不會將人臉資料上傳到開發者營運的伺服器或外部服務，
+    不出售、不披露，也不與第三方分享人臉資料。
+  </p>
+
+  <p>
+    人臉資料僅在相機預覽或照片處理期間暫時存在於裝置記憶體中。
+    PanPan 不會建立用於永久儲存人臉關鍵點或其他人臉資料的資料庫或獨立記錄。
+  </p>
+
+  <p>
+    相關處理完成後，PanPan 不會持續保留人臉資料。
+    開發者營運的伺服器不會儲存任何人臉資料，
+    因此開發者伺服器端的人臉資料保留時間為 0。
+  </p>
+
+  <p>
+    由於 PanPan 不持有任何由開發者儲存的人臉資料，
+    因此不存在需要使用者另外申請刪除的開發者持有人臉資料記錄。
+  </p>
+
+  <p>
+    PanPan 不會將人臉資料用於個人身分識別、身分驗證、認證、
+    廣告、行銷、使用者分析或畫像、數據分析，
+    或跨 App / 網站追蹤。
   </p>
 
   <h3>照片資料</h3>
+
   <p>
-    PanPan 不會將照片或人臉關鍵點資料上傳至開發者伺服器，
-    也不會在開發者伺服器儲存使用者照片。
+    PanPan 不會將照片上傳到開發者營運的伺服器，
+    也不會在開發者伺服器上儲存使用者照片。
+  </p>
+
+  <p>
+    使用者主動選擇儲存的相片可能包含作為相片內容一部分的人臉。
+    這些相片儲存在使用者自己的 Apple Photos 圖庫中，
+    並由使用者自行管理。
+  </p>
+
+  <p>
+    PanPan 不會將人臉關鍵點資料作為獨立資料隨相片儲存。
   </p>
 
   <h3>相機</h3>
+
   <p>
     相機權限僅用於即時預覽及拍照。
   </p>
 
   <h3>照片圖庫</h3>
+
   <p>
-    照片新增權限僅用於儲存拍攝或編輯後的照片。
-    使用者選擇現有照片時，使用 Apple 系統 Photos Picker。
+    照片新增權限僅在使用者主動選擇儲存拍攝或編輯後的相片時使用。
+  </p>
+
+  <p>
+    使用者選擇現有相片並進行本機編輯時，
+    使用 Apple 系統 Photos Picker。
+    PanPan 僅能存取使用者選擇的項目。
+  </p>
+
+  <p>
+    Photos Picker、iCloud Photos 等 Apple 系統服務
+    可能依據 Apple 自身的條款和隱私權政策與 Apple 通訊。
   </p>
 
   <h3>帳號、廣告與分析</h3>
+
   <p>
     PanPan 不需要使用者帳號，
-    不使用廣告 SDK、Analytics SDK，也不進行跨 App 或網站追蹤。
+    不使用廣告 SDK、Analytics SDK，
+    也不進行跨 App 或網站追蹤。
   </p>
 
   <h3>資料保存與刪除</h3>
+
   <p>
-    PanPan 不會在開發者伺服器儲存使用者照片。
-    儲存至 Apple Photos 的照片可由使用者自行管理及刪除。
+    PanPan 不會在開發者營運的伺服器上儲存相片或人臉資料。
+  </p>
+
+  <p>
+    儲存至 Apple Photos 的相片由使用者自行管理，
+    可以透過「照片」App 刪除。
   </p>
 
   <h3>權限管理</h3>
+
   <p>
-    使用者可以隨時透過 iOS「設定」修改相機及照片權限。
+    使用者可以隨時透過 iOS「設定」修改相機和照片權限。
+  </p>
+
+  <h3>隱私權政策更新</h3>
+
+  <p>
+    當 PanPan 的功能或資料處理方式發生變更時，
+    本隱私權政策可能會更新。
   </p>
 </section>
 
