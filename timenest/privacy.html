@@ -41,7 +41,7 @@
 </head>
 <body>
   <h1>TimeNest Privacy Policy</h1>
-  <p class="updated">Last updated: July 12, 2026</p>
+  <p class="updated">Last updated: October 25, 2026</p>
 
   <p>
     This Privacy Policy explains how TimeNest handles information when you use the app.
@@ -63,20 +63,25 @@
 
   <h2>Shared Calendars and Apple iCloud</h2>
   <p>
-    When you actively enable a shared calendar, TimeNest uses Apple iCloud and CloudKit
-    to transfer and store the content selected for sharing.
+    When you create, join, or use a shared calendar, TimeNest uses Apple iCloud and CloudKit
+    to transfer and store events, shifts, and work-time records assigned to that shared calendar.
   </p>
   <p>
-    The calendar owner can separately choose whether to share:
+    These three types of content are synchronized automatically; there are no separate
+    category-sharing switches. Received shared calendars are view-only by default.
+    Recipients can create, edit, or delete events only when the owner enables event editing
+    and their iCloud permission is read-write. Shifts and work-time records remain view-only
+    for recipients. Changing the calendar's event-editing switch updates existing members'
+    iCloud permissions as well.
   </p>
-  <ul>
-    <li>Calendar events</li>
-    <li>Shift records</li>
-    <li>Work-time records</li>
-  </ul>
   <p>
-    Recipients have read-only access. They can view shared content, but cannot create,
-    edit, or delete the owner's shared content.
+    On supported systems (iOS 26 or later), an owner may allow requests to join a private
+    shared calendar. The request uses the requester's current iCloud account; the owner
+    sees the name and email address or phone number supplied by CloudKit, when available. Owners approve
+    access, with read-only as the default approval choice. Accepted members with read-write
+    access may forward the request link; forwarding does not itself grant access. Turning
+    requests off does not remove existing members. These requests are handled by Apple
+    CloudKit, not a TimeNest-operated account service.
   </p>
   <p>
     Shared records do not include private memos, notifications, voice-input content,
@@ -90,6 +95,26 @@
     privacy policies.
   </p>
 
+  <h2>Optional Input, System Calendars, and Location</h2>
+  <p>
+    Quick entry parses text with local rules and does not call an AI service. If you enable
+    system-calendar access, TimeNest uses Apple EventKit to read the calendars you select
+    for display and search. It does not modify their source events or copy them into its
+    CloudKit shared records.
+  </p>
+  <p>
+    Weather uses location to request forecasts from Apple WeatherKit. Place searches send
+    the search text to Apple MapKit. Departure estimates use the current location, selected
+    destination, travel mode, and arrival time to request an estimated travel time. The app
+    does not enable continuous background location tracking. These features require the
+    relevant permissions and available Apple services.
+  </p>
+  <p>
+    Memo voice input uses the microphone and Apple Speech only when you start it and
+    requires on-device recognition support. Recognized text is inserted into the local
+    memo. Devices or languages without on-device recognition cannot use this feature.
+  </p>
+
   <h2>Local Storage</h2>
   <p>
     TimeNest stores app data such as events, shifts, work records, reminders, display
@@ -99,7 +124,7 @@
   <p>
     If you uninstall the app, iOS normally removes the app's local container and the data
     stored inside it. Data stored through Apple iCloud or CloudKit may be handled separately
-    under Apple's service rules.
+    under Apple's service rules. Uninstalling the app does not revoke cloud sharing access.
   </p>
 
   <h2>Widgets and App Group Data</h2>
@@ -173,6 +198,9 @@
   <ul>
     <li>Apple iCloud and CloudKit for optional shared calendars</li>
     <li>Apple StoreKit for the Remove Ads in-app purchase</li>
+    <li>Apple WeatherKit and MapKit for optional weather, place search, and departure estimates</li>
+    <li>Apple EventKit for selected system-calendar display and search</li>
+    <li>Apple Speech for optional on-device memo dictation</li>
     <li>Google Mobile Ads and Google User Messaging Platform for advertising and consent</li>
     <li>Public ICS holiday providers selected in the app's settings</li>
   </ul>
@@ -190,8 +218,11 @@
     local data and from recipients' shared views during a later synchronization.
   </p>
   <p>
-    The owner can stop sharing from the Shared Calendar management screen. This revokes
-    recipient access without deleting the owner's remaining local data.
+    The owner can stop sharing using the shared calendar's delete action. Events, shifts,
+    and work-time records currently stored on that device are moved to My Calendar before
+    the cloud shared calendar is removed. Members lose access when stopping succeeds.
+    Sync first: changes made by other members that have not reached this device are not
+    included in the local records being preserved.
   </p>
   <p>
     A recipient can leave a shared calendar. TimeNest then removes the shared calendar's
@@ -200,6 +231,12 @@
   <p>
     Holiday subscriptions can be disabled or modified in Settings. Uninstalling the app
     normally removes locally stored app data from the device.
+  </p>
+
+  <p>
+    Copies previously made with Copy to My Calendar or a manually exported backup are
+    independent of the shared source. Stopping or leaving a share does not erase those
+    copies. You control any destination selected when exporting a backup.
   </p>
 
   <h2>Children's Privacy</h2>
@@ -229,3 +266,4 @@
   </footer>
 </body>
 </html>
+

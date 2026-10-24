@@ -52,7 +52,7 @@
 </head>
 <body>
   <h1>TimeNest Support</h1>
-  <p class="updated">Last updated: July 12, 2026</p>
+  <p class="updated">Last updated: October 25, 2026</p>
 
   <p>
     Thank you for using TimeNest. This page provides support information for the TimeNest
@@ -106,16 +106,21 @@
 
   <h3>How do shared calendars work?</h3>
   <p>
-    The calendar owner can create a shared calendar and separately choose whether to share:
+    Events, shifts, and work-time records assigned to an owned shared calendar are shared
+    automatically, without separate category switches. Received calendars are view-only
+    by default. Recipients may create, edit, or delete events only when the owner enables
+    event editing and their iCloud permission is read-write. Shifts and work-time records
+    remain view-only. Changing the event-editing switch also updates existing members'
+    iCloud permissions.
   </p>
-  <ul>
-    <li>Calendar events</li>
-    <li>Shift records</li>
-    <li>Work-time records</li>
-  </ul>
+
+  <h3>How do requests to join work?</h3>
   <p>
-    The recipient can view the selected content, but cannot create, edit, or delete the
-    owner's shared content.
+    On iOS 26 or later, the owner may allow requests to join a private calendar. The owner
+    sees the requester's iCloud name and email address or phone number, when available, and approves access;
+    the default approval choice is read-only. Accepted members with read-write access can
+    forward the request link, but the owner must approve each request. Disabling requests
+    keeps existing members. After approval, reopen the link or check and accept access.
   </p>
 
   <h3>What information is not shared?</h3>
@@ -142,8 +147,8 @@
     <li>Confirm that the recipient accepted the sharing invitation.</li>
     <li>Ask the owner to confirm that sharing is still active.</li>
     <li>
-      Ask the owner to confirm that the intended event, shift, or work-record sharing
-      switches are enabled.
+      Ask the owner to confirm that the intended events, shifts, and work records are
+      assigned to this shared calendar, then finish synchronization.
     </li>
     <li>
       Wait briefly and try again if Apple iCloud or CloudKit is temporarily unavailable.
@@ -152,13 +157,38 @@
 
   <h3>How can I stop or leave a shared calendar?</h3>
   <p>
-    The owner can stop sharing from the Shared Calendar management screen. This revokes
-    recipient access without deleting the owner's local data.
+    The owner can use the shared calendar's delete action to stop sharing. Events, shifts,
+    and work-time records already on this device are kept and moved to My Calendar.
+    Members lose access when stopping succeeds. Sync first so that other members' latest
+    changes have reached this device; unsynchronized changes are not included in the
+    local records being preserved.
   </p>
   <p>
     A recipient can leave a shared calendar from the same area. TimeNest removes the shared
     calendar's local entry and cache from the recipient's device without deleting the
     owner's data.
+  </p>
+
+  <h3>What happens to copies and backups?</h3>
+  <p>
+    Copy to My Calendar makes independent local copies. Its overwrite confirmation states
+    that events, shifts, and work records in the selected destination range will be replaced;
+    data outside a selected range is preserved. These copies do not continue syncing and
+    are not erased when the original share is stopped or left. Exported backup files are
+    also independent copies in the destination you select.
+  </p>
+  <p>
+    Backup restoration is blocked if the file contains an owned shared calendar or if this
+    device currently owns a shared calendar. A device also cannot adopt an owned calendar
+    found in iCloud but missing locally: it stops with guidance instead of replacing cloud
+    content with an incomplete local snapshot. Keep the original device and data; follow
+    the in-app instructions rather than deleting data or expecting a backup to transfer
+    ownership. Personal-calendar backup restoration remains available when these ownership
+    conditions do not apply. Received shared-calendar caches are not exported in backups.
+    To prepare a transferable personal-data backup, finish syncing on the original device,
+    successfully stop its owned shares, and then make a new backup. After restoration,
+    create new shares and invite members again. Uninstalling the app does not revoke
+    cloud sharing access.
   </p>
 
   <h3>How do public-holiday subscriptions work?</h3>
@@ -218,3 +248,4 @@
   </footer>
 </body>
 </html>
+
