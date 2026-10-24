@@ -1,185 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WardrobeApp Support</title>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="WardrobeApp support and frequently asked questions" />
+  <title>Support | WardrobeApp</title>
   <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f4ef;
+      --surface: #ffffff;
+      --text: #1f2522;
+      --muted: #5f6b65;
+      --accent: #3d6755;
+      --border: #dce3de;
+      --todo-bg: #fff5d8;
+      --todo-text: #6f4d00;
+      --shadow: 0 16px 40px rgb(31 37 34 / 8%);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111512;
+        --surface: #1a201c;
+        --text: #edf2ee;
+        --muted: #b3beb7;
+        --accent: #9ac8ae;
+        --border: #344039;
+        --todo-bg: #3d3212;
+        --todo-text: #ffe49a;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
-      line-height: 1.8;
-      color: #172033;
-      background: #ffffff;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+    .wrap { width: min(900px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 64px 0 30px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin: 8px 0 6px; font-size: clamp(2.2rem, 7vw, 4.2rem); line-height: 1.05; }
+    .lead { max-width: 700px; color: var(--muted); font-size: 1.08rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    nav a {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text);
+      padding: 7px 13px;
+      text-decoration: none;
     }
-
-    h2 {
-      margin-top: 36px;
-      font-size: 21px;
+    nav a:hover, a { color: var(--accent); }
+    main { display: grid; gap: 18px; padding-bottom: 56px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: clamp(22px, 5vw, 40px);
     }
-
-    h3 {
-      margin-top: 24px;
-      font-size: 17px;
+    h2 { margin: 0 0 14px; font-size: 1.55rem; }
+    h3 { margin: 24px 0 6px; font-size: 1.08rem; }
+    p { margin: 7px 0; }
+    .todo {
+      display: inline-block;
+      margin-top: 8px;
+      border-radius: 8px;
+      background: var(--todo-bg);
+      color: var(--todo-text);
+      font-weight: 800;
+      padding: 7px 10px;
     }
-
-    .lead {
-      color: #4b5563;
-      font-size: 17px;
-    }
-
-    .box {
-      background: #f7f9fa;
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin: 20px 0;
-    }
-
-    a {
-      color: #3d6755;
-    }
-
-    footer {
-      margin-top: 56px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-      color: #6b7280;
-      font-size: 14px;
-    }
+    .note { color: var(--muted); }
+    .lang { color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    footer { color: var(--muted); padding: 0 0 48px; }
   </style>
 </head>
-
 <body>
+  <header class="wrap">
+    <div class="eyebrow">WardrobeApp</div>
+    <h1>Support</h1>
+    <p class="lead">WardrobeApp is a local-first iPhone wardrobe organizer that helps you add and edit clothing, then receive weather-aware outfit suggestions from items saved on your device.</p>
+    <nav aria-label="Page links">
+      <a href="#english">English</a>
+      <a href="#simplified-chinese">简体中文</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
 
-<h1>WardrobeApp Support</h1>
+  <main class="wrap">
+    <section class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>For help with WardrobeApp, contact:</p>
+      <p><a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a></p>
+    </section>
 
-<p class="lead">
-WardrobeApp is an iPhone wardrobe organizer that helps you manage your clothes
-and create practical outfit suggestions from items stored on your device.
-</p>
+    <article class="card" id="english">
+      <div class="lang">English</div>
+      <h2>Frequently Asked Questions</h2>
 
-<h2>Getting Started</h2>
+      <h3>Do I need an account?</h3>
+      <p>No. WardrobeApp does not require login or account creation.</p>
 
-<p>
-You can add clothing from the Wardrobe screen by taking a photo with the camera
-or selecting an image using Apple's system photo picker.
-</p>
+      <h3>How do I add clothing?</h3>
+      <p>Open Wardrobe, tap the add button, and either take a photo or choose an image with Apple's system PhotosPicker. Camera access is requested only when you choose to take a photo. PhotosPicker does not require full Photo Library access.</p>
 
-<p>
-Saved clothing information can be edited manually, including:
-</p>
+      <h3>Can I edit clothing information?</h3>
+      <p>Yes. You can manually edit saved clothing details such as category, color, season, style, and notes.</p>
 
-<ul>
-  <li>Category</li>
-  <li>Color</li>
-  <li>Season</li>
-  <li>Style</li>
-  <li>Notes</li>
-</ul>
+      <h3>Where are my wardrobe data and images stored?</h3>
+      <p>They are stored in local app storage on your device. WardrobeApp does not upload wardrobe data or clothing images and does not provide cloud sync.</p>
 
-<h2>Outfit Recommendations</h2>
+      <h3>How do outfit recommendations work?</h3>
+      <p>After you save the required profile and wardrobe items, WardrobeApp can show 1-3 outfit suggestions from your local wardrobe with a simple reason for each suggestion.</p>
 
-<p>
-After adding clothing and completing the required profile information,
-WardrobeApp can generate outfit suggestions using items stored in your wardrobe.
-</p>
+      <h3>Why does WardrobeApp use the network?</h3>
+      <p>In automatic city mode, the app requests location access while in use. After permission, it uses Apple's location and reverse-geocoding services to determine your city. It stores coordinates rounded to two decimal places locally and uses them for weather. You can select a city manually instead; manual city searches also use Apple's geocoding service. Apple Weather receives the current or selected city's coordinates over the network, without wardrobe data, photos, profile settings, or outfit history. If location is unavailable, automatic mode uses the last saved city or Tokyo. If current weather is unavailable, today's recommendations can use clearly marked default weather; unavailable future forecasts are not invented. Google Mobile Ads and Google's User Messaging Platform also use the network for bottom banner ads and privacy consent. Banner requests are enabled only when the consent SDK indicates that ads can be requested. When required, you can revisit your advertising privacy choices from Settings.</p>
 
-<p>
-Weather information is used as additional context for outfit recommendations.
-WardrobeApp currently uses Apple Weather data for fixed Tokyo reference coordinates
-and does not request your current location.
-</p>
+      <h3>How do I delete local data?</h3>
+      <p>Delete wardrobe items and history inside the app. Deleting WardrobeApp removes the local data stored by this version from the device.</p>
+    </article>
 
-<h2>Where is my data stored?</h2>
+    <article class="card" id="simplified-chinese" lang="zh-Hans">
+      <div class="lang">简体中文</div>
+      <h2>常见问题</h2>
 
-<p>
-Wardrobe records, profile settings, outfit history, and clothing images are stored
-locally on your device.
-</p>
+      <h3>是否需要账号？</h3>
+      <p>不需要。WardrobeApp 不要求登录或创建账号。</p>
 
-<p>
-WardrobeApp does not require an account and does not upload your wardrobe data
-or clothing images to a developer-operated server.
-</p>
+      <h3>如何新增衣物？</h3>
+      <p>打开“衣柜”，点击新增按钮，然后拍摄照片或通过 Apple 系统 PhotosPicker 选择图片。仅当你主动拍照时才会请求相机权限；PhotosPicker 不需要完整照片库访问权限。</p>
 
-<h2>Camera and Photos</h2>
+      <h3>可以手动编辑衣物信息吗？</h3>
+      <p>可以。你可以手动编辑已保存衣物的类别、颜色、季节、风格和备注等信息。</p>
 
-<p>
-Camera permission is requested only when you choose to photograph a clothing item.
-</p>
+      <h3>衣柜数据和图片保存在哪里？</h3>
+      <p>这些内容保存在当前设备的本地应用存储中。WardrobeApp 不上传衣柜数据或衣物图片，也不提供云同步。</p>
 
-<p>
-When selecting an existing image, WardrobeApp uses Apple's system photo picker.
-The app does not require full access to your Photo Library for this operation.
-</p>
+      <h3>穿搭推荐如何工作？</h3>
+      <p>保存所需的个人资料和衣柜条目后，WardrobeApp 可以从本地衣柜生成 1-3 套穿搭建议，并为每套建议显示简单理由。</p>
 
-<h2>Advertisements</h2>
+      <h3>为什么 WardrobeApp 会使用网络？</h3>
+      <p>自动选择城市时，应用会请求使用期间的位置权限。获准后，通过 Apple 的定位和反向地理编码服务确定城市，将保留两位小数的坐标存于本机并用于天气。你也可以手动选择城市；手动搜索城市同样使用 Apple 地理编码服务。应用会通过网络将当前或所选城市的坐标发送给 Apple Weather，不附带衣柜数据、照片、个人资料或穿搭历史。无法定位时，自动模式使用上次保存的城市或东京。无法取得当前天气时，今日推荐可使用明确标识的默认天气；不生成不存在的未来预报。Google Mobile Ads 和 Google 用户消息平台还会通过网络提供底部 Banner 广告和隐私同意服务。只有同意 SDK 指示允许请求广告时，应用才会启用 Banner 请求；需要时，你可以从“设定”页面重新打开广告隐私选项。</p>
 
-<p>
-The free version of WardrobeApp may display banner advertisements using
-Google Mobile Ads.
-</p>
+      <h3>如何删除本地数据？</h3>
+      <p>你可以在应用内删除衣物和历史记录。删除 WardrobeApp 会从设备上移除当前版本保存在本地的数据。</p>
+    </article>
+  </main>
 
-<p>
-WardrobeApp does not send your wardrobe records or clothing images to advertising
-services.
-</p>
-
-<h2>Deleting Data</h2>
-
-<p>
-Individual clothing items and outfit history can be deleted from within the app.
-</p>
-
-<p>
-Deleting WardrobeApp from your device removes the app's locally stored data,
-subject to normal iOS storage behavior.
-</p>
-
-<h2>Contact</h2>
-
-<div class="box">
-  <p>
-    For support, questions, feedback, or bug reports, please contact:
-  </p>
-
-  <p>
-    Email:
-    <a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a>
-  </p>
-</div>
-
-<p>
-When reporting a problem, please include the following information when possible:
-</p>
-
-<ul>
-  <li>iPhone model</li>
-  <li>iOS version</li>
-  <li>WardrobeApp version</li>
-  <li>Description of the problem</li>
-  <li>Steps to reproduce the problem</li>
-  <li>Screenshots if applicable</li>
-</ul>
-
-<h2>Privacy</h2>
-
-<p>
-For information about how WardrobeApp handles data, please see the
-<a href="./privacy.html">WardrobeApp Privacy Policy</a>.
-</p>
-
-<footer>
-  © 2026 WardrobeApp / Song Labs
-</footer>
-
+  <footer class="wrap">WardrobeApp Support</footer>
 </body>
 </html>

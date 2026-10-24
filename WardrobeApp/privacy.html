@@ -1,255 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WardrobeApp Privacy Policy</title>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="WardrobeApp privacy policy" />
+  <title>Privacy Policy | WardrobeApp</title>
   <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f4ef;
+      --surface: #ffffff;
+      --text: #1f2522;
+      --muted: #5f6b65;
+      --accent: #3d6755;
+      --border: #dce3de;
+      --shadow: 0 16px 40px rgb(31 37 34 / 8%);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111512;
+        --surface: #1a201c;
+        --text: #edf2ee;
+        --muted: #b3beb7;
+        --accent: #9ac8ae;
+        --border: #344039;
+        --shadow: none;
+      }
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
-      line-height: 1.8;
-      color: #172033;
-      background: #ffffff;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+    .wrap { width: min(900px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 64px 0 30px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin: 8px 0 6px; font-size: clamp(2.2rem, 7vw, 4.2rem); line-height: 1.05; }
+    .updated { margin: 0; color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    nav a {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text);
+      padding: 7px 13px;
+      text-decoration: none;
     }
-
-    h2 {
-      margin-top: 36px;
-      font-size: 21px;
+    nav a:hover, a { color: var(--accent); }
+    main { display: grid; gap: 18px; padding-bottom: 56px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: clamp(22px, 5vw, 40px);
     }
-
-    .date {
-      color: #6b7280;
-      margin-bottom: 36px;
-    }
-
-    a {
-      color: #3d6755;
-    }
-
-    footer {
-      margin-top: 56px;
-      padding-top: 24px;
-      border-top: 1px solid #e5e7eb;
-      color: #6b7280;
-      font-size: 14px;
-    }
+    h2 { margin: 0 0 12px; font-size: 1.55rem; }
+    h3 { margin: 28px 0 8px; font-size: 1.08rem; }
+    p, ul { margin: 8px 0; }
+    li + li { margin-top: 6px; }
+    .summary { border-left: 4px solid var(--accent); }
+    .lang { color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    footer { color: var(--muted); padding: 0 0 48px; }
   </style>
 </head>
-
 <body>
+  <header class="wrap">
+    <div class="eyebrow">WardrobeApp</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 24, 2026</p>
+    <nav aria-label="Page links">
+      <a href="#english">English</a>
+      <a href="#simplified-chinese">简体中文</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
 
-<h1>WardrobeApp Privacy Policy</h1>
-<p class="date">Last updated: September 27, 2026</p>
+  <main class="wrap">
+    <section class="card summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">Privacy at a glance</h2>
+      <ul>
+        <li>Wardrobe data and clothing images are stored locally on your device.</li>
+        <li>WardrobeApp does not upload your wardrobe data or images.</li>
+        <li>No account or developer-operated cloud sync is used.</li>
+        <li>The free version may show bottom banner ads through Google Mobile Ads SDK.</li>
+        <li>Automatic city selection requests location permission. Apple Weather uses current or manually selected city coordinates over the network.</li>
+      </ul>
+    </section>
 
-<p>
-WardrobeApp ("the App") is an iPhone application for organizing clothing
-and generating outfit suggestions.
-WardrobeApp is designed to keep wardrobe-related information primarily on
-the user's device and to minimize unnecessary collection of personal data.
-</p>
+    <article class="card" id="english">
+      <div class="lang">English</div>
+      <h2>WardrobeApp Privacy Policy</h2>
 
-<h2>1. Wardrobe Data</h2>
+      <h3>Local data storage</h3>
+      <p>Your profile settings, wardrobe items, travel plans, outfit history, clothing images, and outfit photo copies are stored on your device using local app storage. The app does not require an account and does not provide cloud sync.</p>
+      <p>WardrobeApp does not upload your wardrobe data, clothing images, profile settings, or outfit history to a developer-operated server.</p>
 
-<p>
-WardrobeApp stores information such as clothing records, profile settings,
-outfit history, categories, colors, seasons, styles, notes, and other
-wardrobe-related information locally on your device.
-</p>
+      <h3>Camera and photo selection</h3>
+      <p>Camera access is requested when you choose to take a clothing or outfit-history photo. Photo import uses Apple's system PhotosPicker. This flow does not request full Photo Library access.</p>
 
-<p>
-WardrobeApp does not upload this wardrobe information to a
-developer-operated server.
-</p>
+      <h3>Apple Weather and network access</h3>
+      <p>In automatic city mode, the app requests location access while in use. After permission, it uses Apple's location and reverse-geocoding services to determine your city. It stores coordinates rounded to two decimal places locally and uses them for weather. You can select a city manually instead; manual city searches also use Apple's geocoding service. Apple Weather receives the current or selected city's coordinates over the network, without wardrobe data, photos, profile settings, or outfit history. If location is unavailable, automatic mode uses the last saved city or Tokyo. If current weather is unavailable, today's recommendations can use clearly marked default weather; unavailable future forecasts are not invented.</p>
+      <p>Travel planning uses the selected destination city without changing your daily weather city or requesting device location.</p>
 
-<h2>2. Clothing Images</h2>
+      <h3>Ads, analytics, and tracking</h3>
+      <p>The free version of WardrobeApp may show bottom banner ads through Google Mobile Ads SDK. WardrobeApp does not include a separate analytics SDK and does not sell your data.</p>
+      <p>WardrobeApp does not upload or share your local wardrobe content, clothing images, profile settings, or outfit history with advertising partners. Google's advertising and consent SDKs may process device identifiers, approximate location, diagnostics, app interactions, advertising data, and consent information for serving and measuring ads, diagnosing and improving advertising services, and managing consent, according to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and your applicable privacy choices.</p>
+      <p>The app uses Google's User Messaging Platform to update consent information and present a consent form when required. Banner requests are enabled only when the SDK indicates that ads can be requested. When required, you can revisit your advertising privacy choices from Settings.</p>
 
-<p>
-Images added to WardrobeApp are stored in the App's local storage on your device.
-</p>
+      <h3>Deletion</h3>
+      <p>You can delete wardrobe items, travel plans, history, and attached photo copies inside the app. Deleting an attached copy does not change your photo library. Camera and location access can be revoked in iOS Settings; revoking permission does not delete stored data. Deleting the app removes its local app data from this device.</p>
 
-<p>
-WardrobeApp does not upload your clothing images to a developer-operated server.
-</p>
+      <h3>Contact</h3>
+      <p>For privacy questions, email <a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a> or visit the <a href="support.html">WardrobeApp Support page</a>.</p>
+    </article>
 
-<h2>3. Camera</h2>
+    <article class="card" id="simplified-chinese" lang="zh-Hans">
+      <div class="lang">简体中文</div>
+      <h2>WardrobeApp 隐私政策</h2>
 
-<p>
-Camera access is used only when you choose to photograph a clothing item
-for your wardrobe.
-</p>
+      <h3>本地数据存储</h3>
+      <p>你的资料设置、衣柜条目、旅行计划、穿搭历史、衣物图片和穿搭照片副本保存在当前设备的本地应用存储中。应用不需要账号，也不提供云同步。</p>
+      <p>WardrobeApp 不会将衣柜数据、衣物图片、个人资料设置或穿搭历史上传到开发者运营的服务器。</p>
 
-<p>
-Camera permission can be changed at any time in iOS Settings.
-</p>
+      <h3>相机与照片选择</h3>
+      <p>当你主动拍摄衣物或穿搭历史照片时，应用会请求相机权限。照片导入使用 Apple 系统 PhotosPicker，此流程不会请求完整照片库访问权限。</p>
 
-<h2>4. Photo Selection</h2>
+      <h3>Apple Weather 与网络访问</h3>
+      <p>自动选择城市时，应用会请求使用期间的位置权限。获准后，通过 Apple 的定位和反向地理编码服务确定城市，将保留两位小数的坐标存于本机并用于天气。你也可以手动选择城市；手动搜索城市同样使用 Apple 地理编码服务。应用会通过网络将当前或所选城市的坐标发送给 Apple Weather，不附带衣柜数据、照片、个人资料或穿搭历史。无法定位时，自动模式使用上次保存的城市或东京。无法取得当前天气时，今日推荐可使用明确标识的默认天气；不生成不存在的未来预报。</p>
+      <p>旅行计划使用所选目的地城市，不改变日常天气城市，也不请求设备位置。</p>
 
-<p>
-When you choose an existing image, WardrobeApp uses Apple's system photo picker.
-The App receives access only to the image you explicitly select through the picker.
-</p>
+      <h3>广告、分析与跟踪</h3>
+      <p>WardrobeApp 免费版可能通过 Google Mobile Ads SDK 显示底部 Banner 广告。WardrobeApp 不单独接入统计分析 SDK，也不出售你的数据。</p>
+      <p>WardrobeApp 不会将你的本地衣柜内容、衣物图片、个人资料设置或穿搭历史上传或共享给广告合作方。Google 的广告与同意 SDK 可能根据 <a href="https://policies.google.com/privacy">Google 隐私政策</a>及适用的隐私选择处理设备标识符、大致位置、诊断、应用互动、广告数据和同意信息，以投放和衡量广告、诊断及改进广告服务，以及管理同意选择。</p>
+      <p>应用使用 Google 用户消息平台更新同意状态，并在需要时展示同意表单。只有 SDK 指示允许请求广告时，应用才会启用 Banner 请求。需要时，你可以从“设定”页面重新打开广告隐私选项。</p>
 
-<p>
-WardrobeApp does not require unrestricted access to your entire Photo Library
-for this feature.
-</p>
+      <h3>删除</h3>
+      <p>你可以在应用内删除衣物、旅行计划、历史记录及附加的照片副本。删除附加副本不会更改原相册。你可以在 iOS 设置中撤回相机和位置权限；撤回权限不会删除已存数据。删除应用会移除此设备上的本地应用数据。</p>
 
-<h2>5. Clothing Image Analysis</h2>
+      <h3>联系方式</h3>
+      <p>如有隐私问题，请发送邮件至 <a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a>，或访问 <a href="support.html">WardrobeApp 支持页面</a>。</p>
+    </article>
+  </main>
 
-<p>
-WardrobeApp may analyze clothing images to assist with functions such as
-foreground extraction, clothing classification, and color identification.
-</p>
-
-<p>
-This processing is performed on your device.
-WardrobeApp does not send clothing images to a developer-operated AI service
-or server for this analysis.
-</p>
-
-<h2>6. Outfit Recommendations</h2>
-
-<p>
-WardrobeApp generates outfit recommendations using wardrobe information
-stored on your device.
-</p>
-
-<p>
-Your wardrobe records, clothing images, profile information, and outfit history
-are not uploaded to a developer-operated server for recommendation processing.
-</p>
-
-<h2>7. Apple Weather</h2>
-
-<p>
-WardrobeApp uses Apple Weather / WeatherKit to obtain weather information
-for fixed Tokyo reference coordinates and uses this information as context
-for outfit recommendations.
-</p>
-
-<p>
-WardrobeApp does not request access to your current location.
-Your wardrobe data, clothing images, profile information, and outfit history
-are not included in WeatherKit requests.
-</p>
-
-<p>
-Apple services are governed by Apple's own privacy policies and terms.
-</p>
-
-<h2>8. Advertisements</h2>
-
-<p>
-The free version of WardrobeApp may display banner advertisements using
-Google Mobile Ads SDK.
-</p>
-
-<p>
-WardrobeApp does not provide your wardrobe records, clothing images,
-profile information, or outfit history to Google for advertising purposes.
-</p>
-
-<p>
-Google Mobile Ads may process advertising-related, device, diagnostic,
-or consent information according to Google's own policies and the user's
-applicable privacy choices.
-</p>
-
-<p>
-For more information about Google's privacy practices, please refer to
-Google's Privacy Policy.
-</p>
-
-<h2>9. Analytics</h2>
-
-<p>
-WardrobeApp does not currently use a separate third-party analytics service
-to analyze your wardrobe activity.
-</p>
-
-<h2>10. Accounts and Cloud Storage</h2>
-
-<p>
-WardrobeApp does not require a WardrobeApp account.
-</p>
-
-<p>
-The App does not currently provide a developer-operated cloud synchronization
-service for wardrobe records or clothing images.
-</p>
-
-<h2>11. Data Retention and Deletion</h2>
-
-<p>
-Wardrobe information and clothing images remain stored locally until they
-are deleted by the user or removed as part of normal app data deletion.
-</p>
-
-<p>
-You can delete individual wardrobe items and history from within WardrobeApp.
-You can also delete the App to remove locally stored application data,
-subject to normal iOS storage behavior.
-</p>
-
-<h2>12. Third-Party Services</h2>
-
-<p>
-WardrobeApp may communicate with the following third-party platform services
-for specific app functionality:
-</p>
-
-<ul>
-  <li>Apple Weather / WeatherKit — weather information</li>
-  <li>Google Mobile Ads — banner advertising and advertising consent handling</li>
-</ul>
-
-<p>
-These services operate under their respective privacy policies and terms.
-</p>
-
-<h2>13. Sale of Personal Data</h2>
-
-<p>
-WardrobeApp does not sell your wardrobe information, clothing images,
-profile information, or outfit history.
-</p>
-
-<h2>14. Changes to This Privacy Policy</h2>
-
-<p>
-This Privacy Policy may be updated when WardrobeApp's features,
-third-party services, or data-handling practices change.
-The latest version will be published on this page.
-</p>
-
-<h2>15. Contact</h2>
-
-<p>
-For privacy questions or requests, please contact:
-</p>
-
-<p>
-Email:
-<a href="mailto:songlabs.dev@gmail.com">songlabs.dev@gmail.com</a>
-</p>
-
-<p>
-For general support, please visit the
-<a href="./support.html">WardrobeApp Support page</a>.
-</p>
-
-<footer>
-  © 2026 WardrobeApp / Song Labs
-</footer>
-
+  <footer class="wrap">WardrobeApp Privacy Policy</footer>
 </body>
 </html>
