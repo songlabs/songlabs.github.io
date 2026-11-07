@@ -13,7 +13,7 @@ section{margin-bottom:56px} hr{margin:48px 0;border:0;border-top:1px solid #ddd}
 </head>
 <body>
 <h1>PanPan Photos Privacy Policy</h1>
-<p class="effective-date">Effective date: October 5, 2026</p>
+<p class="effective-date">Effective date: November 7, 2026</p>
 <nav>
 <a href="#ja">日本語</a><a href="#en">English</a><a href="#ko">한국어</a>
 <a href="#zh-hans">简体中文</a><a href="#zh-hant">繁體中文</a>
@@ -33,7 +33,13 @@ section{margin-bottom:56px} hr{margin:48px 0;border:0;border-top:1px solid #ddd}
 <h3>PanPan Vault</h3>
 <p>Vault に取り込まれた写真・ビデオは、対応可能な場合 Apple Photos の元リソースを再エンコードせず端末内に保存します。Vault ファイルは iOS Data Protection を使用し、システムバックアップの対象外です。</p>
 <p>認証には iOS の <code>deviceOwnerAuthentication</code> を使用します。Face ID、Touch ID、端末パスコードは iOS が管理し、PanPan Photos が生体認証テンプレートを取得または保存することはありません。</p>
-<p>Vault の内容はユーザーが削除するまで端末内に保持されます。Vault はクラウドバックアップされないため、App の削除、端末の紛失または故障によりデータが失われる場合があります。</p>
+<p>Vault の内容は、ユーザーが削除するまで端末内に保存されます。端末内の Vault ファイルは、引き続きデバイスのシステムバックアップの対象外です。Vault バックアップを有効にすると、暗号化された Vault のバックアップを、ご自身の iCloud Drive に保存することもできます。この任意のバックアップは iCloud 写真とは別のもので、メディアを開発者が運営するサーバーにアップロードするものではありません。</p>
+
+<p>新しいバックアップには、ランダムに生成された復元用の秘密情報を使用し、同期可能な iCloud キーチェーン項目として保存します。また、端末内で使用するため、端末専用の別のキーキャッシュも保持します。別のインストール環境で復元するには、Apple のサービスを通じてバックアップと必要な復元用の秘密情報にアクセスできる必要があります。この端末でキーを読み取れることは、別の端末にもキーが届いていることを意味しません。以前のパスワード方式のバックアップには、元のパスワードが必要な場合があります。</p>
+
+<p>バックアップをオフにしても、既存の iCloud バックアップの各バージョン、キーチェーン内の復元用の秘密情報、端末専用のキーキャッシュは削除されません。端末内の Vault から項目を削除しても、以前に作成したクラウドバックアップ内のコピーは消去されません。アプリは、これらの既存のクラウドバックアップを自動で削除する機能を提供していません。クラウドストレージは、Apple が提供する利用可能な管理機能で管理してください。アプリのアンインストールは、クラウドバックアップやキーチェーン項目の削除要求にはなりません。それらの保持は、Apple のサービスや設定にも左右されます。</p>
+
+<p>アプリの削除、端末の紛失や故障、バックアップ、必要な復元キー、または元のパスワードへのアクセスを失うことにより、復元できなくなる場合があります。重要なオリジナルは別途保管してください。バックアップを有効にしても、端末内のすべての変更のアップロードが完了したことは保証されません。</p>
 <h3>削除・非表示・復元</h3>
 <p>PanPan Photos が Apple Photos の項目を自動的に削除することはありません。削除はユーザーが明示的に操作し確認した場合のみ PhotoKit を通じて要求されます。システム非表示設定や Vault から Photos への復元もユーザー操作で実行されます。</p>
 <h3>購入</h3>
@@ -60,7 +66,13 @@ section{margin-bottom:56px} hr{margin:48px 0;border:0;border-top:1px solid #ddd}
 <h3>PanPan Vault</h3>
 <p>Where supported, media imported into Vault is stored locally using the original Apple Photos resources without re-encoding. Vault files use iOS Data Protection and are excluded from system backup.</p>
 <p>Vault authentication uses iOS <code>deviceOwnerAuthentication</code>. Face ID, Touch ID, and device passcode credentials are managed by iOS. PanPan Photos does not receive or store biometric templates.</p>
-<p>Vault content remains on the device until the user deletes it. Because Vault is not backed up to the cloud, deleting the app or losing or damaging the device may permanently remove Vault content.</p>
+<p>Vault content is kept locally until you delete it. Local Vault files remain excluded from the device's system backup. If you choose to enable Vault backup, the app can also save encrypted Vault backups in your own iCloud Drive. This optional backup is separate from iCloud Photos and does not upload your media to a developer-operated server.</p>
+
+<p>New backups use a randomly generated recovery secret stored as a synchronizable iCloud Keychain item. The app also keeps a separate device-only key cache for local use. Recovery on another installation depends on access to the backup and the required recovery secret through your Apple services. Being able to read the key on this device does not establish that it has reached another device. Older password-based backups may require their original password.</p>
+
+<p>Turning backup off does not delete existing iCloud backup versions, the recovery secret in Keychain, or the device-only key cache. Removing an item from the local Vault does not erase copies in previously created cloud backups. The app does not provide automatic deletion of those existing cloud versions. Manage cloud storage through Apple's available controls. Uninstalling the app is not a request to delete cloud backups or Keychain items; their retention also depends on Apple's services and settings.</p>
+
+<p>Deleting the app, losing or damaging a device, or losing access to the backup or required recovery key or original password can prevent recovery. Keep important originals separately. Enabling backup does not guarantee that every local change has finished uploading.</p>
 <h3>Deletion, Hidden State, and Restore</h3>
 <p>PanPan Photos never automatically deletes items from Apple Photos. Deletion is requested through PhotoKit only after explicit user action and confirmation. System hidden-state changes and restoration from Vault to Photos are also user-initiated.</p>
 <h3>Purchases</h3>
@@ -84,6 +96,13 @@ section{margin-bottom:56px} hr{margin:48px 0;border:0;border-top:1px solid #ddd}
 <p>Apple Vision으로 이미지 Feature Print와 얼굴 촬영 품질 등의 신호를 기기에서 처리할 수 있으며 사진 품질, 구도 및 유사성 기능에만 사용됩니다. 사람 식별, 신원 확인용 얼굴 인식 또는 개인별 얼굴 데이터베이스를 만들지 않습니다. 얼굴 관련 분석 데이터와 이미지는 개발자나 제3자에게 전송·판매·공유되지 않습니다.</p>
 <h3>PanPan Vault</h3>
 <p>지원되는 경우 Vault는 Apple Photos 원본 리소스를 재인코딩하지 않고 기기에 저장합니다. iOS Data Protection을 사용하며 시스템 백업에서 제외됩니다. 인증은 iOS의 <code>deviceOwnerAuthentication</code>을 사용하며 PanPan Photos는 생체 인증 템플릿을 취득하거나 저장하지 않습니다. 앱 삭제, 기기 분실 또는 고장 시 Vault 데이터가 손실될 수 있습니다.</p>
+<p>Vault 콘텐츠는 사용자가 삭제할 때까지 기기에 보관됩니다. 기기의 Vault 파일은 계속해서 기기의 시스템 백업 대상에서 제외됩니다. Vault 백업을 활성화하면 암호화된 Vault 백업을 본인의 iCloud Drive에도 저장할 수 있습니다. 이 선택적 백업은 iCloud 사진과 별개이며, 미디어를 개발자가 운영하는 서버로 업로드하지 않습니다.</p>
+
+<p>새 백업에는 무작위로 생성된 복구용 비밀 정보를 사용하며, 이를 동기화 가능한 iCloud 키체인 항목으로 저장합니다. 앱은 기기 내 사용을 위해 별도의 기기 전용 키 캐시도 보관합니다. 다른 설치 환경에서 복구하려면 Apple 서비스를 통해 백업과 필요한 복구용 비밀 정보에 접근할 수 있어야 합니다. 이 기기에서 키를 읽을 수 있다는 사실만으로 다른 기기에도 키가 전달되었다고 볼 수는 없습니다. 기존의 비밀번호 기반 백업에는 원래 비밀번호가 필요할 수 있습니다.</p>
+
+<p>백업을 꺼도 기존 iCloud 백업 버전, 키체인의 복구용 비밀 정보 또는 기기 전용 키 캐시는 삭제되지 않습니다. 기기의 Vault에서 항목을 삭제해도 이전에 생성된 클라우드 백업의 사본은 지워지지 않습니다. 앱은 이러한 기존 클라우드 백업 버전을 자동으로 삭제하는 기능을 제공하지 않습니다. 클라우드 저장 공간은 Apple에서 제공하는 이용 가능한 관리 기능으로 관리하세요. 앱 제거는 클라우드 백업이나 키체인 항목의 삭제 요청이 아니며, 해당 항목의 보관은 Apple 서비스와 설정에도 영향을 받습니다.</p>
+
+<p>앱 삭제, 기기 분실 또는 손상, 백업이나 필요한 복구 키 또는 원래 비밀번호에 대한 접근 상실로 인해 복구가 불가능해질 수 있습니다. 중요한 원본은 별도로 보관하세요. 백업을 활성화해도 기기의 모든 변경 사항이 업로드를 마쳤다는 보장은 없습니다.</p>
 <h3>삭제 및 구매</h3>
 <p>Apple Photos 항목을 자동 삭제하지 않습니다. 삭제, 시스템 숨김 상태 변경 및 Vault 복원은 사용자가 직접 실행합니다. Pro 구매는 Apple StoreKit을 사용하며 결제는 Apple이 처리합니다.</p>
 <h3>로컬 데이터 및 문의</h3>
@@ -104,6 +123,13 @@ section{margin-bottom:56px} hr{margin:48px 0;border:0;border-top:1px solid #ddd}
 <p>PanPan Photos 可能在设备本地使用 Apple Vision 处理图像 Feature Print、人脸拍摄质量等信号，仅用于照片质量、构图和相似度功能。不进行人物身份识别、用于身份确认的人脸识别，也不会建立人物人脸数据库。相关分析数据和图片不会发送、出售或共享给开发者或第三方。</p>
 <h3>PanPan Vault</h3>
 <p>在支持的情况下，Vault 直接保存 Apple Photos 原始资源，不重新编码。Vault 使用 iOS Data Protection，并排除在系统备份之外。认证使用 iOS <code>deviceOwnerAuthentication</code>；Face ID、Touch ID 和设备密码由 iOS 管理，PanPan Photos 不取得或保存生物识别模板。删除 App、设备丢失或损坏可能导致 Vault 数据丢失。</p>
+<p>Vault 内容会保存在本机，直到您将其删除。本机 Vault 文件仍不包含在设备的系统备份中。如果您选择开启 Vault 备份，App 还可以将加密的 Vault 备份保存在您自己的 iCloud Drive 中。这项可选备份与 iCloud 照片相互独立，不会将您的媒体上传到开发者运营的服务器。</p>
+
+<p>新备份使用随机生成的恢复密钥，并将其保存为可同步的 iCloud 钥匙串项目。App 还会另外保留一份仅限本设备使用的密钥缓存。在另一个安装环境中恢复，取决于您能否通过 Apple 服务访问备份和所需的恢复密钥。本设备能够读取密钥，并不代表密钥已经同步到其他设备。较早的密码式备份可能需要其原始密码。</p>
+
+<p>关闭备份不会删除已有的 iCloud 备份版本、钥匙串中的恢复密钥或仅限本设备使用的密钥缓存。从本机 Vault 中删除项目，不会清除先前创建的云端备份中的副本。App 不提供自动删除这些已有云端备份版本的功能。请通过 Apple 提供的可用管理功能管理云端存储。卸载 App 并不表示请求删除云端备份或钥匙串项目；这些内容的保留还取决于 Apple 的服务和设置。</p>
+
+<p>删除 App、设备丢失或损坏，或无法访问备份、所需恢复密钥或原始密码，都可能导致无法恢复。请另行保存重要原件。开启备份并不保证本机的每项更改都已完成上传。</p>
 <h3>删除与购买</h3>
 <p>PanPan Photos 不会自动删除 Apple Photos 中的项目。删除、系统隐藏状态修改及 Vault 恢复都由用户主动执行。Pro 购买使用 Apple StoreKit，由 Apple 处理付款。</p>
 <h3>本地数据与联系</h3>
@@ -124,6 +150,13 @@ section{margin-bottom:56px} hr{margin:48px 0;border:0;border-top:1px solid #ddd}
 <p>PanPan Photos 可能在裝置本機使用 Apple Vision 處理圖像 Feature Print、人臉拍攝品質等訊號，僅用於相片品質、構圖和相似度功能。不進行人物身分識別、用於身分確認的人臉辨識，也不會建立人物人臉資料庫。相關分析資料和圖片不會傳送、出售或分享給開發者或第三方。</p>
 <h3>PanPan Vault</h3>
 <p>在支援的情況下，Vault 直接保存 Apple Photos 原始資源，不重新編碼。Vault 使用 iOS Data Protection，並排除於系統備份之外。驗證使用 iOS <code>deviceOwnerAuthentication</code>；Face ID、Touch ID 和裝置密碼由 iOS 管理，PanPan Photos 不取得或保存生物辨識模板。刪除 App、裝置遺失或損壞可能導致 Vault 資料遺失。</p>
+<p>Vault 內容會儲存在本機，直到您將其刪除。本機 Vault 檔案仍不包含在裝置的系統備份中。如果您選擇開啟 Vault 備份，App 也可以將加密的 Vault 備份儲存在您自己的 iCloud Drive 中。這項選用備份與 iCloud 照片相互獨立，不會將您的媒體上傳到開發者營運的伺服器。</p>
+
+<p>新備份使用隨機產生的復原金鑰，並將其儲存為可同步的 iCloud 鑰匙圈項目。App 也會另外保留一份僅限本裝置使用的金鑰快取。在另一個安裝環境中復原，取決於您能否透過 Apple 服務存取備份和所需的復原金鑰。本裝置能夠讀取金鑰，並不代表金鑰已經同步到其他裝置。較早的密碼式備份可能需要其原始密碼。</p>
+
+<p>關閉備份不會刪除既有的 iCloud 備份版本、鑰匙圈中的復原金鑰或僅限本裝置使用的金鑰快取。從本機 Vault 中刪除項目，不會清除先前建立的雲端備份中的副本。App 不提供自動刪除這些既有雲端備份版本的功能。請透過 Apple 提供的可用管理功能管理雲端儲存空間。解除安裝 App 並不表示要求刪除雲端備份或鑰匙圈項目；這些內容的保留也取決於 Apple 的服務和設定。</p>
+
+<p>刪除 App、裝置遺失或損壞，或無法存取備份、所需復原金鑰或原始密碼，都可能導致無法復原。請另行保存重要原件。開啟備份並不保證本機的每項變更都已完成上傳。</p>
 <h3>刪除與購買</h3>
 <p>PanPan Photos 不會自動刪除 Apple Photos 中的項目。刪除、系統隱藏狀態修改及 Vault 還原都由使用者主動執行。Pro 購買使用 Apple StoreKit，由 Apple 處理付款。</p>
 <h3>本機資料與聯絡</h3>

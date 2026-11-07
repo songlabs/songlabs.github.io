@@ -58,7 +58,7 @@
 
     <main>
       <h1>QuotaGlance Privacy Policy</h1>
-      <p class="updated">Effective date: August 27, 2026</p>
+      <p class="updated">Effective date: November 7, 2026</p>
 
       <div class="summary">
         <p>
@@ -134,6 +134,11 @@
         reset date when the provider omits one.
       </p>
 
+      <h3>Local usage history</h3>
+      <p>The app stores successful usage-refresh samples in local app preferences to show recent usage and estimate its pace. A sample contains the provider, a local account identifier, the available session and weekly usage windows and reset dates, and its update time. The history does not store OAuth credentials or account identity labels and is not a remote history database operated by QuotaGlance.</p>
+
+      <p>When a new sample is processed, the app removes stored samples whose update time is more than seven days old and keeps no more than 2,000 samples in total. This is cleanup during sample processing, not a timed background deletion service; older samples can remain if no new sample is processed. The account-removal flow clears that account's history. A successful reconnection also clears that account's history when the app cannot establish that it is the same provider account. This can happen when the provider account identifier changes or is unavailable.</p>
+
       <h3>Preferences and access information</h3>
       <p>
         Local app preferences can include the selected language, automatic-refresh interval,
@@ -150,6 +155,15 @@
         reduce device-clock rollback of the seven-day Trial. It does not contain payment-card data
         and does not create or restart a Trial.
       </p>
+
+      <h3>Usage-window shortcuts and handoff records</h3>
+      <p>For the optional usage-window start operation, QuotaGlance stores a shortcut name for each local account, a handoff record, and the last launch time in local app preferences. The record includes a random attempt identifier, the local account identifier, provider, start time, previous reset time when available, status and whether a callback was received.</p>
+
+      <p>When you choose to run the configured Claude shortcut, QuotaGlance passes its name, the fixed input “Hi”, and return URLs containing the random attempt identifier and outcome category to Apple's Shortcuts app. Your configured shortcut determines the subsequent actions and the account used by Ask Claude. QuotaGlance cannot verify every action in a customized shortcut. It does not pass provider OAuth credentials to Shortcuts or directly send an inference request as part of this handoff. For Codex, this feature opens the official Codex page; the message is sent by you, not by QuotaGlance.</p>
+
+      <p>A callback may carry shortcut output or error text. QuotaGlance does not retain or display those contents in the handoff record. It checks the attempt identifier and outcome category, then uses its normal provider usage refresh to check for a new usage window. Opening an app or receiving a callback does not prove that a message was sent.</p>
+
+      <p>Clearing the handoff record does not clear the saved shortcut name or last launch time, stop a shortcut already running, or reverse provider usage. Cancellation or an error may leave an unverified record so that another attempt is not started inadvertently. Reconnecting to the same identified provider account preserves that record. Account removal, or a successful reconnection that is treated as a different or unidentified provider account, clears the account's handoff record and shortcut name. The app-wide last launch time remains for duplicate-launch prevention. Local app-preference backup and removal also depend on the operating system's settings and behavior.</p>
 
       <h2>Where local data is stored and shared</h2>
       <div class="table-wrap">
@@ -197,6 +211,7 @@
         handling of your account and network information are governed by that provider's own
         policies and terms. QuotaGlance does not control those practices.
       </p>
+      <p>If you use the optional Claude shortcut handoff, Apple's Shortcuts app receives the shortcut name, fixed input and callback URLs described above. Any subsequent Ask Claude request and other actions you have placed in that shortcut are handled by those apps and services under their own settings, policies and terms. The additional handoff settings and record are not added to QuotaGlance's Widget or Apple Watch snapshot.</p>
       <ul>
         <li><a href="https://openai.com/policies/">OpenAI policies and terms</a></li>
         <li><a href="https://privacy.anthropic.com/en/collections/10672414-policies-terms-of-service">Anthropic policies and terms</a></li>
@@ -213,9 +228,7 @@
 
       <h2>Retention and deletion</h2>
       <p>
-        QuotaGlance keeps local account information and the latest successful snapshots until they
-        are replaced, the account is removed, the relevant app data is cleared, or the app is
-        uninstalled, subject to the platform behavior described below.
+        QuotaGlance keeps local account information and the latest successful snapshots until they are replaced, the account is removed, the relevant app data is cleared, or the app is uninstalled, subject to the platform behavior described below. It also keeps local usage-history samples and the usage-window handoff settings described below. These records have their own cleanup behavior. Removing an account clears its history and handoff record and saved shortcut name after the app completes its account-removal operation; it does not revoke provider-side authorization or stop a shortcut already running.
       </p>
       <p>
         When you remove a current account in QuotaGlance, the app deletes that account's
