@@ -70,7 +70,7 @@
   <header class="wrap">
     <div class="eyebrow">WardrobeApp</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 24, 2026</p>
+    <p class="updated">Last updated: November 12, 2026</p>
     <nav aria-label="Page links">
       <a href="#english">English</a>
       <a href="#simplified-chinese">简体中文</a>
@@ -83,7 +83,7 @@
       <h2 id="summary-title">Privacy at a glance</h2>
       <ul>
         <li>Wardrobe data and clothing images are stored locally on your device.</li>
-        <li>WardrobeApp does not upload your wardrobe data or images.</li>
+        <li>WardrobeApp does not automatically upload your wardrobe data or images. In version 1.14, you can choose to save or share an unencrypted PDF backup.</li>
         <li>No account or developer-operated cloud sync is used.</li>
         <li>The free version may show bottom banner ads through Google Mobile Ads SDK.</li>
         <li>Automatic city selection requests location permission. Apple Weather uses current or manually selected city coordinates over the network.</li>
@@ -97,6 +97,13 @@
       <h3>Local data storage</h3>
       <p>Your profile settings, wardrobe items, travel plans, outfit history, clothing images, and outfit photo copies are stored on your device using local app storage. The app does not require an account and does not provide cloud sync.</p>
       <p>WardrobeApp does not upload your wardrobe data, clothing images, profile settings, or outfit history to a developer-operated server.</p>
+
+      <h3>PDF export, backup and import in version 1.14</h3>
+      <p>PDF creation and import are processed locally. A wardrobe backup contains the selected garments' identifiers, attributes, display notes, flags, creation and update dates, and saved clothing image files, including original image files when present. Image bytes are preserved, so metadata already present in those image files may also be included. The PDF includes visible catalog pages and an embedded backup payload in its metadata. It is not encrypted. Share the file only with people or services you choose to receive these contents.</p>
+      <p>Export opens Apple's system share sheet. You choose whether to save a copy or send it to another app, person or service, including an AI service. WardrobeApp does not automatically send the PDF or its contents to a developer server or an AI provider. Any recipient or storage provider you choose handles the shared copy under its own terms and privacy practices.</p>
+      <p>Wardrobe recovery accepts the original Closetory PDF containing the supported backup payload. It previews the records and requires confirmation before adding garments; existing garment identifiers are skipped rather than overwritten. This is a garment backup, not a complete app backup: wear counts, last-worn dates, wearing history, outfit plans and profile settings are not included. A category export contains only that category. Earlier display-only catalogs, including version 1.14 build 17, cannot be restored. Editing, printing or optimizing the PDF with another tool may remove the embedded backup; keep the original exported file.</p>
+      <p>Outfit PDF import is a separate local feature. It accepts the documented selectable-text format and requires review and matching of garment identifiers before saving plans. Saving imported plans does not mark clothes as worn or change wearing history. The app does not automatically contact an AI service to create or import these plans.</p>
+      <p>Deleting garments or deleting the app does not delete PDFs that you saved or shared outside the app. Manage those copies with their recipients or in the storage service where you saved them.</p>
 
       <h3>Camera and photo selection</h3>
       <p>Camera access is requested when you choose to take a clothing or outfit-history photo. Photo import uses Apple's system PhotosPicker. This flow does not request full Photo Library access.</p>
@@ -124,6 +131,13 @@
       <h3>本地数据存储</h3>
       <p>你的资料设置、衣柜条目、旅行计划、穿搭历史、衣物图片和穿搭照片副本保存在当前设备的本地应用存储中。应用不需要账号，也不提供云同步。</p>
       <p>WardrobeApp 不会将衣柜数据、衣物图片、个人资料设置或穿搭历史上传到开发者运营的服务器。</p>
+
+      <h3>1.14 版的 PDF 导出、备份与导入</h3>
+      <p>PDF 生成与导入均在本机处理。衣柜备份包含所选衣物的标识符、属性、显示备注、标记、创建及更新时间，以及已保存的衣物图片文件；如有原始图片文件，也会一并包含。图片字节保持原样，因此图片原有的内嵌元数据也可能随文件导出。备份数据保存在 PDF 元数据中，文件同时包含可见图册页面。PDF 未加密，请只分享给你选择的接收者或服务。</p>
+      <p>导出会打开 Apple 系统分享面板，由你决定是否保存副本，或发送给其他应用、个人或服务，包括 AI 服务。WardrobeApp 不会自动把 PDF 或其中的内容发送到开发者服务器或 AI 提供商。你选择的接收者或存储服务会按其自身条款和隐私政策处理副本。</p>
+      <p>衣柜恢复只接受含受支持备份数据的 Closetory 原始 PDF。导入会先预览记录，经你确认后才新增衣物；已有相同标识符的衣物会跳过，不会覆盖。这是衣物备份，不是完整应用备份：不包含穿着次数、上次穿着日期、穿着历史、穿搭计划或个人资料设置。按类别导出仅包含该类别。早期仅供查看的图册（包括 1.14 构建 17）不能用于恢复。使用其他工具编辑、打印或优化 PDF 可能丢失内嵌备份，请保留原始导出文件。</p>
+      <p>穿搭 PDF 导入是独立的本地功能。它接受说明中规定的可选择文字格式，保存计划前需要你核对内容并匹配衣物标识符。保存导入的计划不会把衣物标记为已穿着，也不会更改穿着历史。应用不会自动联系 AI 服务生成或导入这些计划。</p>
+      <p>删除衣物或删除应用，不会删除你在应用外保存或分享的 PDF。请在保存文件的服务中，或联系接收者管理这些副本。</p>
 
       <h3>相机与照片选择</h3>
       <p>当你主动拍摄衣物或穿搭历史照片时，应用会请求相机权限。照片导入使用 Apple 系统 PhotosPicker，此流程不会请求完整照片库访问权限。</p>

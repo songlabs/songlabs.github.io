@@ -111,13 +111,25 @@
       <p>Yes. You can manually edit saved clothing details such as category, color, season, style, and notes.</p>
 
       <h3>Where are my wardrobe data and images stored?</h3>
-      <p>They are stored in local app storage on your device. WardrobeApp does not upload wardrobe data or clothing images and does not provide cloud sync.</p>
+      <p>They are stored in local app storage on your device. WardrobeApp does not automatically upload wardrobe data or clothing images and does not provide cloud sync. Version 1.14 lets you choose to save or share a PDF backup.</p>
 
       <h3>How do outfit recommendations work?</h3>
       <p>After you save the required profile and wardrobe items, WardrobeApp can show 1-3 outfit suggestions from your local wardrobe with a simple reason for each suggestion.</p>
 
       <h3>Why does WardrobeApp use the network?</h3>
       <p>In automatic city mode, the app requests location access while in use. After permission, it uses Apple's location and reverse-geocoding services to determine your city. It stores coordinates rounded to two decimal places locally and uses them for weather. You can select a city manually instead; manual city searches also use Apple's geocoding service. Apple Weather receives the current or selected city's coordinates over the network, without wardrobe data, photos, profile settings, or outfit history. If location is unavailable, automatic mode uses the last saved city or Tokyo. If current weather is unavailable, today's recommendations can use clearly marked default weather; unavailable future forecasts are not invented. Google Mobile Ads and Google's User Messaging Platform also use the network for bottom banner ads and privacy consent. Banner requests are enabled only when the consent SDK indicates that ads can be requested. When required, you can revisit your advertising privacy choices from Settings.</p>
+
+      <h3>How do I back up and restore my wardrobe in version 1.14?</h3>
+      <p>Open the PDF action in Wardrobe. Export all garments or one category, then save the original PDF with the system share sheet. To recover garments, open the same PDF screen, choose the backup import action and select that original file. Review the preview and confirm. Existing garment identifiers are skipped; import does not replace existing garments.</p>
+      <p>The backup preserves the selected garments' attributes, notes, identifiers and saved images, including original image files when present. It does not include wear counts, last-worn dates, wearing history, outfit plans or profile settings. Keep separate copies of anything else you need. Exporting one category does not back up the rest of the wardrobe.</p>
+      <p>Keep the original PDF, not a printed, scanned or re-saved copy. Recovery requires embedded Closetory backup data; earlier display-only catalogs, including version 1.14 build 17, are not recoverable backups. Other PDF tools can remove that data even when the visible pages still look correct. PDFs are not encrypted and can contain image metadata, so choose their storage and recipients carefully.</p>
+      <p>Exports are limited to 1,000 garments, 100 pages and 25 MiB per PDF, with a separate limit on embedded backup data. Large wardrobes or image files can reach the limit earlier. Split a large wardrobe by category. A missing referenced image or an exceeded limit stops the export with an error rather than silently omitting that data.</p>
+
+      <h3>How do I import outfit suggestions?</h3>
+      <p>Open the PDF action in Daily Outfits. The wardrobe export includes instructions for a selectable-text outfit PDF using full garment identifiers. If you choose to send that PDF to another person or AI service, sharing is your choice; the app does not call that service. Import the resulting supported PDF, review the outfits and match any unknown identifiers, then save. You can also paste the documented text format or a list of full garment identifiers as a fallback. Arbitrary layouts and scanned PDFs are not supported. Saved plans do not mark garments worn or add wearing history.</p>
+
+      <h3>Does deleting the app remove an exported PDF?</h3>
+      <p>Copies saved outside this app, such as in iCloud Drive, or shared with another app or person are not deleted when you delete this app. Delete or manage them in that location or with the recipient. Removing a garment from the app does not update an earlier exported PDF.</p>
 
       <h3>How do I delete local data?</h3>
       <p>Delete wardrobe items and history inside the app. Deleting WardrobeApp removes the local data stored by this version from the device.</p>
@@ -137,13 +149,25 @@
       <p>可以。你可以手动编辑已保存衣物的类别、颜色、季节、风格和备注等信息。</p>
 
       <h3>衣柜数据和图片保存在哪里？</h3>
-      <p>这些内容保存在当前设备的本地应用存储中。WardrobeApp 不上传衣柜数据或衣物图片，也不提供云同步。</p>
+      <p>这些内容保存在当前设备的本地应用存储中。WardrobeApp 不会自动上传衣柜数据或衣物图片，也不提供云同步。1.14 版可由你选择保存或分享 PDF 备份。</p>
 
       <h3>穿搭推荐如何工作？</h3>
       <p>保存所需的个人资料和衣柜条目后，WardrobeApp 可以从本地衣柜生成 1-3 套穿搭建议，并为每套建议显示简单理由。</p>
 
       <h3>为什么 WardrobeApp 会使用网络？</h3>
       <p>自动选择城市时，应用会请求使用期间的位置权限。获准后，通过 Apple 的定位和反向地理编码服务确定城市，将保留两位小数的坐标存于本机并用于天气。你也可以手动选择城市；手动搜索城市同样使用 Apple 地理编码服务。应用会通过网络将当前或所选城市的坐标发送给 Apple Weather，不附带衣柜数据、照片、个人资料或穿搭历史。无法定位时，自动模式使用上次保存的城市或东京。无法取得当前天气时，今日推荐可使用明确标识的默认天气；不生成不存在的未来预报。Google Mobile Ads 和 Google 用户消息平台还会通过网络提供底部 Banner 广告和隐私同意服务。只有同意 SDK 指示允许请求广告时，应用才会启用 Banner 请求；需要时，你可以从“设定”页面重新打开广告隐私选项。</p>
+
+      <h3>如何在 1.14 版备份和恢复衣柜？</h3>
+      <p>打开“衣柜”的 PDF 入口，导出全部衣物或某一类别，再通过系统分享面板保存原始 PDF。恢复时，从同一 PDF 页面选择导入备份，选取原始文件，核对预览后确认。已有相同标识符的衣物会跳过，导入不会替换现有衣物。</p>
+      <p>备份保留所选衣物的属性、备注、标识符和已保存的图片；如有原始图片文件，也会一并保存。不包含穿着次数、上次穿着日期、穿着历史、穿搭计划或个人资料设置。其他需要保留的内容请另行保存。导出一个类别不等于备份整个衣柜。</p>
+      <p>请保留原始 PDF，不要只保留打印、扫描或重新保存的副本。恢复需要 PDF 内嵌的 Closetory 备份数据；早期仅供查看的图册（包括 1.14 构建 17）不是可恢复备份。其他 PDF 工具可能移除备份数据，即使可见页面看起来没有变化。PDF 未加密，也可能包含图片元数据，请谨慎选择保存位置和接收者。</p>
+      <p>每个导出 PDF 最多包含 1,000 件衣物、100 页，文件大小不超过 25 MiB，内嵌备份数据另有大小限制。大图或大量衣物可能更早达到上限，可按类别分别导出。引用的图片缺失或超过限制时，导出会明确报错，不会悄悄省略该数据。</p>
+
+      <h3>如何导入穿搭建议？</h3>
+      <p>打开“每日穿搭”的 PDF 入口。衣柜导出文件附有格式说明，要求使用完整衣物标识符生成可选择文字的穿搭 PDF。你可以自行决定是否把文件发给他人或 AI 服务，应用不会自动调用该服务。导入符合格式的 PDF 后，核对穿搭、匹配未知标识符，再保存。也可粘贴规定格式的文字或完整衣物标识符列表作为替代。任意排版或扫描 PDF 不受支持。保存计划不会标记衣物为已穿着，也不会新增穿着历史。</p>
+
+      <h3>删除应用会同时删除导出的 PDF 吗？</h3>
+      <p>保存在本应用之外（例如 iCloud Drive）或已分享给其他应用、个人的 PDF，不会随本应用删除。请到对应位置或联系接收者管理。删除应用中的衣物，不会更新之前导出的 PDF。</p>
 
       <h3>如何删除本地数据？</h3>
       <p>你可以在应用内删除衣物和历史记录。删除 WardrobeApp 会从设备上移除当前版本保存在本地的数据。</p>
